@@ -6,17 +6,22 @@ import { vns_method_to_btn_name } from './anicard.js';
 class Homepage_Card {
     constructor(parameters = { 
         card_id, card_title, VNS_tag, VNS_clustername, VNS_ambiguity, EL_tag, EL_tag2, AVT_tag, how, why, 
-        eg_title, eg_source, eg_url, eg_year, eg_category, eg_subcategory
+        eg_title, eg_venue, eg_url, eg_year, eg_category, eg_subcategory
     }) {
         this.parameters = {};
         this.parameters = parameters;
     }
-
+    _createNone () {
+        let Ability_node = document.createElement("div");
+        return Ability_node;
+    }
+    //大的创建卡片的方法，里面调用了几个小方法：创建卡片头、身子、尾部等
     _createCard () {
         let deck_single_node = document.createElement("div");
         let card_inner_node = document.createElement("div");
         let card_front_node = document.createElement("div");
         let card_back_node = document.createElement("div");
+        let card_front_header_color = this._createCard_header_color();
         let card_front_header = this._createCard_header();
         let card_back_header = card_front_header.cloneNode(true);
         deck_single_node.classList.add("col-xl-4", "col-lg-6", "col-sm-12", "card-deck-single");
@@ -26,8 +31,10 @@ class Homepage_Card {
 
         deck_single_node.setAttribute("name", "card_" + this.parameters["card_id"]);
 
+        
         // front
         let front_nodeList = [
+            card_front_header_color,
             card_front_header, 
             this._createCard_frontBody(),
             this._createCard_frontImg(),
@@ -42,13 +49,18 @@ class Homepage_Card {
         ];
         back_nodeList.forEach((node, i, nodeList) => card_back_node.appendChild(node));
 
+        
         // insert to card-inner
         [card_front_node, card_back_node].forEach(
             (node, i, nodeList) => card_inner_node.appendChild(node)
         );
+
         deck_single_node.appendChild(card_inner_node);
         return deck_single_node;
     }
+
+
+
 
     _get_aim_deck () {
         if(this.parameters["VNS_tag"]) {
@@ -74,47 +86,31 @@ class Homepage_Card {
     *     <span class="header-symbol"></span>
     * </div> 
     * */
+    _createCard_header_color () {
+        let card_header_color_node = document.createElement("div");
+        card_header_color_node.innerHTML = `<div class="header-color"></div>`;
+        return card_header_color_node;
+    }
     _createCard_header () {
         let card_header_node = document.createElement("div");
+        let header_year_node = document.createElement("div");
         let header_text_node = document.createElement("div");
         let header_classification_node = document.createElement("div");
 
         // let header_symbol_node = document.createElement("span");  // 缺了icon图片定义
 
-
+        let year_html = `<div class="card-body-text">${vns_method_to_btn_name(this.parameters["year"])}</div>`;
         let title_html = `<div class="header-text-title">${vns_method_to_btn_name(this.parameters["card_title"])}</div>`;
 
-        //用el_tag1作为盒子名称
-        //let classnewIcon_html = `<div class="header-icon-class ${this.parameters["EL_tag1"].replace(/\s+/g, "-")}"></div>`;
-        //let classnew_html = `<div class="header-text-class">${vns_method_to_btn_name(this.parameters["EL_tag1"])}</div>`;
-
-        //直接用el_tag2作为盒子名称
-        //let classIcon_html = `<div class="header-icon-class ${this.parameters["EL_tag2"].replace(/\s+/g, "-")}"></div>`;
-        //let class_html = `<div class="header-text-class">${vns_method_to_btn_name(this.parameters["EL_tag2"])}</div>`;
-        
-        // else if (this.parameters["VNS_ambiguity"] == 0) {
-        //     let classnewIcon_html = `<div class="test"></div>`;
-        //     let classnew_html = `<div class="test"></div>`;
-        // }
-
-        
         card_header_node.classList.add("card-header", `el-${this.parameters["EL_tag1"].replace(/\s+/g, "-")}`);
+        header_year_node.classList.add("header-year");
         header_text_node.classList.add("header-text");
         header_classification_node.classList.add("header_classification");
 
+        header_year_node.innerHTML = year_html;
         header_text_node.innerHTML = title_html;
 
-        // if (this.parameters["VNS_ambiguity"] == 1){
-        //     header_classification_node.innerHTML = classnewIcon_html + classnew_html + classIcon_html + class_html;
-        // }
-        // else{
-        //     header_classification_node.innerHTML = classnewIcon_html + classnew_html;
-        // }
-        
-
-        // console.log (this.parameters["VNS_ambiguity"]);
-
-        [header_text_node, header_classification_node].forEach((node, i, nodeList) => card_header_node.appendChild(node));
+        [header_year_node, header_text_node, header_classification_node].forEach((node, i, nodeList) => card_header_node.appendChild(node));
         // [header_text_node, header_symbol_node].forEach((node, i, nodeList) => card_header_node.appendChild(node));
         return card_header_node;
     }
@@ -258,8 +254,8 @@ class Homepage_Card {
         let card_frontBody_titleHtml = "";
         let card_frontBody_textHtml = "";
         let card_body_front_textArray = [
-            this.parameters["source"],
             this.parameters["year"],
+            this.parameters["venue"],
             this.parameters["link"]
         ];
         
@@ -270,17 +266,17 @@ class Homepage_Card {
             if(card_body_front_textArray[i] === "") {
                 return ;
             }
-            if(i==0){
-                card_frontBody_textHtml = `<p class="card-body-text"><b>Source: </b>${card_body_front_textArray[i]}</p>`;
-                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
-                return;
-            }
-            if(i==1){
-                card_frontBody_textHtml = `<p class="card-body-text"><b>Year: </b>${card_body_front_textArray[i]}</p>`;
-                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
-                return;
-            }
 
+            // if(i==0){
+            //     card_frontBody_textHtml = `<p class="card-body-text"><b>Year: </b>${card_body_front_textArray[i]}</p>`;
+            //     card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+            //     return;
+            // }
+            if(i==1){
+                card_frontBody_textHtml = `<p class="card-body-text"><b>Venue: </b>${card_body_front_textArray[i]}</p>`;
+                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+                return;
+            }
             if(i==2){
                 card_frontBody_textHtml = `<p class="card-body-text"><b>Link: </b><a classname="caselink" href=${card_body_front_textArray[i]}  target="_blank">URL 🔗</a></p>`;
                 card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
@@ -297,7 +293,7 @@ class Homepage_Card {
      * <div class="card-body">
      *      <h6 class="card-body-subtitle">Inequality: how wealth is distributed in the UK - animated video</h6>
      *      <div class="card-body-caption">
-     *          <div><span>Source: </span>The Guardian</div>
+     *          <div><span>venue: </span>The Guardian</div>
      *          <div><span>Year: </span>2013</div>
      *          <div><span>Category: </span>Social Sciences</div>
      *          <div><span>Subcategory: </span>Economics</div>
@@ -310,7 +306,7 @@ class Homepage_Card {
         let card_body_caption_node = document.createElement("div");
         let caption_item_html = "";
         let caption_valueArr = [
-            // this.parameters["eg_source"], this.parameters["eg_year"], 
+            // this.parameters["eg_venue"], this.parameters["eg_year"], 
             // this.parameters["eg_category"], this.parameters["eg_subcategory"]
         ];
 
@@ -368,7 +364,7 @@ class Homepage_Card {
 
 //这里把card的json传进来了
 Homepage_Card.card_body_front_titleArray = ["HOW","year","link"];
-Homepage_Card.caption_keyArr = ["Source", "Year", "Category", "Subcategory"];
+Homepage_Card.caption_keyArr = ["venue", "Year", "Category", "Subcategory"];
 
 Homepage_Card.prototype._bindEvents = function () {
 
@@ -444,6 +440,7 @@ Homepage_Card.prototype._bindEvents = function () {
 
 }
 
+// 把每张小卡片渲染出来
 Homepage_Card.prototype.appendTo = function (parentNode) {
     if(!(parentNode instanceof HTMLElement)) {
         console.error(`${parentNode} is not a DOM node!`);
@@ -524,11 +521,11 @@ Homepage_Reminder.prototype._bindEvents = function () {
             // if(reminder_node.nextElementSibling && reminder_node.querySelector(".reminder-title").innerHTML == "Emphasis (15)" ) {
                 let distance_to_bottom = card_deck_node.getBoundingClientRect().bottom - reminder_node.getBoundingClientRect().top;
                 // if ((distance_to_bottom < CARD_DISPLAY_NODE.offsetHeight * 0.5) && !reminder_node.classList.contains("hidden-sticky")) {
-                if ((distance_to_bottom < CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5) && !reminder_node.classList.contains("hidden-sticky")) {
+                if ((distance_to_bottom < CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.1) && !reminder_node.classList.contains("hidden-sticky")) {
                     reminder_node.classList.add("hidden-sticky");
                     // console.log(distance_to_bottom)
                 // } else if ((distance_to_bottom >= CARD_DISPLAY_NODE.offsetHeight * 0.5) && reminder_node.classList.contains("hidden-sticky")) {
-                } else if ((distance_to_bottom >= CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5) && reminder_node.classList.contains("hidden-sticky")) {
+                } else if ((distance_to_bottom >= CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.1) && reminder_node.classList.contains("hidden-sticky")) {
                     reminder_node.classList.remove("hidden-sticky");
                 }
             }

@@ -19,53 +19,27 @@
 .C1 .modal-footer,
 .C1 .mobile-nav-symbol,
 .C1 .scrollSpy-btn-symbol,
-.C1 .reminder-symbol{
-  background-color: #66C3A6 !important;
-}
-.C1 .front {
-  background: transparent linear-gradient(180deg, #E3F4EF 50%, #FFFFFF 80%) !important;
-}
-
-.C1 .card-header{
-  background-color: #66C3A6 !important;
-}
-.C1 .story-card-body{
-  background-color: #E3F4EF;
-}
-
+.C1 .reminder-symbol, 
+.C1 .header-color,
 .vns-C2,
 .C2 .modal-header,
 .C2 .modal-footer,
 .C2 .mobile-nav-symbol,
 .C2 .scrollSpy-btn-symbol,
-.C2 .reminder-symbol {
-  background-color: #66C3A6 !important;
-}
-.C2 .front {
-  background: transparent linear-gradient(180deg, #E3F4EF 50%, #FFFFFF 80%) !important;
-}
-.C2 .card-header{
-  background-color: #66C3A6;
-}
-.C2 .story-card-body{
-  background-color: #E3F4EF;
-}
-
+.C2 .reminder-symbol, 
+.C2 .header-color,
 .vns-C3,
 .C3 .modal-header,
 .C3 .modal-footer,
 .C3 .mobile-nav-symbol,
 .C3 .scrollSpy-btn-symbol,
-.C3 .reminder-symbol {
+.C3 .reminder-symbol, 
+.C3 .header-color {
   background-color: #66C3A6 !important;
 }
-.C3 .front {
-  background: transparent linear-gradient(180deg, #E3F4EF 50%, #FFFFFF 80%) !important;
-}
-.C3 .card-header{
-  background-color: #66C3A6;
-}
-.C3 .story-card-body{
+.C1 .card-header,
+.C2 .card-header,
+.C3 .card-header  {
   background-color: #E3F4EF;
 }
 
@@ -74,75 +48,132 @@
 .C4 .modal-footer,
 .C4 .mobile-nav-symbol,
 .C4 .scrollSpy-btn-symbol,
-.C4 .reminder-symbol {
-  background-color: #80B1D3 !important;
-}
-.C4 .front {
-  background: transparent linear-gradient(180deg, #E6EFF6 50%, #FFFFFF 80%) !important;
-}
-.C4 .card-header{
-  background-color: #BFD8E9;
-}
-.C4 .story-card-body{
-  background-color: #E6EFF6;
-}
-
-
+.C4 .reminder-symbol, 
+.C4 .header-color,
 .vns-C5,
 .C5 .modal-header,
 .C5 .modal-footer,
 .C5 .mobile-nav-symbol,
 .C5 .scrollSpy-btn-symbol,
-.C5 .reminder-symbol {
-  background-color: #FDB462 !important;
-}
-.C5 .front {
-  background: transparent linear-gradient(180deg, #FFF0DF 50%, #FFFFFF 80%) !important;
-}
-.C5 .card-header{
-  background-color: #FED9B0;
-}
-.C5 .story-card-body{
-  background-color: #FFF0DF;
-}
-
+.C5 .reminder-symbol, 
+.C5 .header-color,
 .vns-C6,
 .C6 .modal-header,
 .C6 .modal-footer,
 .C6 .mobile-nav-symbol,
 .C6 .scrollSpy-btn-symbol,
-.C6 .reminder-symbol {
-  background-color: #B3DE69 !important;
+.C6 .reminder-symbol, 
+.C6 .header-color {
+  background-color: #FB8D62 !important;
 }
-.C6 .front {
-  background: transparent linear-gradient(180deg, #F0F9E1 50%, #FFFFFF 80%) !important;
-}
-.C6 .card-header{
-  background-color: #D8EEB3;
-}
-.C6 .story-card-body{
-  background-color: #F0F9E1;
+.C4 .card-header,
+.C5 .card-header,
+.C6 .card-header  {
+  background-color: #FEEAE3;
 }
 
-.vns-Observations,
-.Observations .modal-header,
-.Observations .modal-footer,
-.Observations .mobile-nav-symbol,
-.Observations .scrollSpy-btn-symbol,
-.Observations .reminder-symbol {
-  background-color: #ACACAC !important;
+.vns-C7,
+.C7 .modal-header,
+.C7 .modal-footer,
+.C7 .mobile-nav-symbol,
+.C7 .scrollSpy-btn-symbol,
+.C7 .reminder-symbol, 
+.C7 .header-color,
+.vns-C8,
+.C8 .modal-header,
+.C8 .modal-footer,
+.C8 .mobile-nav-symbol,
+.C8 .scrollSpy-btn-symbol,
+.C8 .reminder-symbol, 
+.C8 .header-color,
+.vns-C9,
+.C9 .modal-header,
+.C9 .modal-footer,
+.C9 .mobile-nav-symbol,
+.C9 .scrollSpy-btn-symbol,
+.C9 .reminder-symbol, 
+.C9 .header-color {
+  background-color: #8E9FCB !important;
 }
-.Observations .front {
-  background: transparent linear-gradient(180deg, #EEEEEE 50%, #FFFFFF 80%) !important;
+.C7 .card-header,
+.C8 .card-header,
+.C9 .card-header  {
+  background-color: #EBEEF6;
 }
-.Observations .card-header{
-  background-color: #D5D5D5;
+
+.vns-C10,
+.C10 .modal-header,
+.C10 .modal-footer,
+.C10 .mobile-nav-symbol,
+.C10 .scrollSpy-btn-symbol,
+.C10 .reminder-symbol, 
+.C10 .header-color,
+.vns-C11,
+.C11 .modal-header,
+.C11 .modal-footer,
+.C11 .mobile-nav-symbol,
+.C11 .scrollSpy-btn-symbol,
+.C11 .reminder-symbol, 
+.C11 .header-color,
+.vns-C12,
+.C12 .modal-header,
+.C12 .modal-footer,
+.C12 .mobile-nav-symbol,
+.C12 .scrollSpy-btn-symbol,
+.C12 .reminder-symbol, 
+.C12 .header-color {
+  background-color: #E78AC3 !important;
 }
-.Observations .story-card-body{
-  background-color: #EEEEEE;
+.C10 .card-header,
+.C11 .card-header,
+.C12 .card-header  {
+  background-color: #FBEAF4;
+}
+
+.vns-C13,
+.C13 .modal-header,
+.C13 .modal-footer,
+.C13 .mobile-nav-symbol,
+.C13 .scrollSpy-btn-symbol,
+.C13 .reminder-symbol, 
+.C13 .header-color {
+  background-color: #A5D953 !important;
+}
+.C13 .card-header  {
+  background-color: #EFF8E0;
+}
+
+.vns-C14,
+.C14 .modal-header,
+.C14 .modal-footer,
+.C14 .mobile-nav-symbol,
+.C14 .scrollSpy-btn-symbol,
+.C14 .reminder-symbol, 
+.C14 .header-color {
+  background-color: #E4C394 !important;
+}
+.C14 .card-header  {
+  background-color: #FAF4EC;
 }
 
 
+.C1 .card-inner,
+.C4 .card-inner,
+.C7 .card-inner,
+.C10 .card-inner {
+  display: none;
+}
+
+.C2 .reminder-symbol, 
+.C3 .reminder-symbol, 
+.C5 .reminder-symbol, 
+.C6 .reminder-symbol, 
+.C8 .reminder-symbol, 
+.C9 .reminder-symbol, 
+.C11 .reminder-symbol, 
+.C12 .reminder-symbol {
+  background-color: #FFFFFF !important;
+}
 
 
 
@@ -441,7 +472,7 @@ footer .footer-text {
 }
 
 .navbar-container {
-  background: transparent linear-gradient(90deg, #DEF5CC 0%, #ECF7DE 100%);
+  background: transparent linear-gradient(90deg, #CCF0F5 0%, #DEF7F6 100%);
   background-color: #000000;
   background-position: bottom right;
   background-size: auto 100%;
@@ -558,7 +589,7 @@ footer .footer-text {
   position: absolute;
   width: 0;
   height: 0.25rem;
-  background-color: #86CC43;
+  background-color: #45C4DB;
   border-radius: 50vh;
   transform: translateX(-50%);
   left: 50%;
@@ -618,7 +649,7 @@ footer .footer-text {
 }
 
 /* 卡片颜色渐变 */
-.card-deck-single[name="card_9"] .card-header {
+/* .card-deck-single[name="card_9"] .card-header {
   background: transparent linear-gradient(90deg, #F2F27F 0%, #F2F27F 25%, #D5D5D5 75%, #D5D5D5 100%) 0% 0% no-repeat padding-box !important;
 }
 .card-deck-single[name="card_31"] .card-header {
@@ -632,7 +663,7 @@ footer .footer-text {
 }
 .card-deck-single[name="card_55"] .card-header {
   background: transparent linear-gradient(90deg, #D8EEB3 0%, #D8EEB3 25%, #D5D5D5 75%, #D5D5D5 100%) 0% 0% no-repeat padding-box !important;
-}
+} */
 
 
 /* .card-deck-single[name="card_21"] .card-header {
@@ -662,11 +693,11 @@ footer .footer-text {
 
 /*编辑卡片头部*/
 .card-deck .card-header {
-  padding: 1rem 1rem 1rem;
+  padding: 0.6rem 1rem 0.8rem 1rem;
   /*padding-top: 1rem;*/
   border: transparent;
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
+  /* border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem; */
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   color: #000000;
@@ -680,12 +711,7 @@ footer .footer-text {
   justify-content:center;
 }
 
-/*.card-deck .card-header > .header-symbol {
-  content: "";
-  
-  margin-top: auto;
-  margin-bottom: 1px;
-}*/
+
 .card-deck .card-header .header_classification {
   display: flex;
   justify-content:center;
@@ -701,9 +727,10 @@ footer .footer-text {
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 13rem;
-  min-height: 13rem;
+  height: auto;
+  min-height: 11.6rem;
   position: relative;
+  border-top: 1px solid #DEDEDE;
 }
 
 .card-deck .card-frontImg .card-img, .card-deck .card-imgBox .card-img {
@@ -745,7 +772,7 @@ footer .footer-text {
 .card-deck .card-body {
   color: #000000;
   padding: 0 1rem;
-  margin: 1.1rem 0;
+  margin: 0.8rem 0;
   text-align: left;
   overflow-y: auto;
   /*display:flex;
@@ -883,6 +910,12 @@ footer .footer-text {
   background-repeat: no-repeat;
 }
 
+.header-color {
+  width: 100%;
+  height: 6px;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
 .header-text-title {
   font-size: 1rem;
   font-weight: 600;
@@ -890,6 +923,7 @@ footer .footer-text {
   margin: 0 auto;
   display: flex;
   justify-content:center;
+  margin-top: 0.375rem;
   /* padding-bottom: 0.5rem; */
 }
 
@@ -908,7 +942,7 @@ footer .footer-text {
 /*设置卡片高度*/
 .card-inner {
   position: relative;
-  height: 28.5rem;
+  height: 28rem;
 }
 
 .card-inner .front,
@@ -1357,12 +1391,12 @@ footer .footer-text {
 
 .sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active {
   border-color: transparent;
-  background-color: #EEF9E5;
+  background-color: #DAF4F8;
 }
 
 @media (max-width: 576px) {
   .sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active {
-    border: 1px solid #EEF9E5;
+    border: 1px solid #DAF4F8;
   }
 }
 
@@ -1465,7 +1499,7 @@ footer .footer-text {
   transform: translateY(-50%);
   right: 0;
 /*  background-color: #FFE1BD;*/
-  background-color: #86CC43;
+  background-color: #45C4DB;
   border-top-right-radius: 0.1rem;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0.1rem;

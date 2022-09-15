@@ -6,12 +6,72 @@
     "EL_tag1": "",
     "EL_tag2": "",
     "VNS_ambiguity": "",
+    "VNS_tag": "C1",
+    "card_id": 0,
+    "card_title": "Autonomous tools and design: a triple-loop approach to human-machine learning",
+    "how": "",
+    "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
+    "venue": "Washington Post",
+    "year": 2021
+  },
+  {
+    "AVT_tag": 0,
+    "Chart_tag": "Data",
+    "EL_tag": "Peak,Data",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
+    "VNS_tag": "C4",
+    "card_id": 0,
+    "card_title": "Autonomous tools and design: a triple-loop approach to human-machine learning",
+    "how": "",
+    "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
+    "venue": "Washington Post",
+    "year": 2021
+  },
+  {
+    "AVT_tag": 0,
+    "Chart_tag": "Data",
+    "EL_tag": "Peak,Data",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
+    "VNS_tag": "C7",
+    "card_id": 0,
+    "card_title": "Autonomous tools and design: a triple-loop approach to human-machine learning",
+    "how": "",
+    "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
+    "venue": "Washington Post",
+    "year": 2021
+  },
+  {
+    "AVT_tag": 0,
+    "Chart_tag": "Data",
+    "EL_tag": "Peak,Data",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
+    "VNS_tag": "C10",
+    "card_id": 0,
+    "card_title": "Autonomous tools and design: a triple-loop approach to human-machine learning",
+    "how": "",
+    "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
+    "venue": "Washington Post",
+    "year": 2021
+  },
+  {
+    "AVT_tag": 0,
+    "Chart_tag": "Data",
+    "EL_tag": "Peak,Data",
+    "EL_tag1": "",
+    "EL_tag2": "",
+    "VNS_ambiguity": "",
     "VNS_tag": "C4",
     "card_id": 1,
     "card_title": "America’s demographics are changing. How has your county shifted?",
     "how": "",
     "link": "https://www.washingtonpost.com/nation/interactive/2021/census-maps-race-population-demographics/",
-    "source": "Washington Post",
+    "venue": "Washington Post",
     "year": 2021
   },
 
@@ -27,7 +87,7 @@
     "card_title": "BMI and obesity: Where are you on the fat scale?",
     "how": "",
     "link": "https://www.bbc.com/news/health-43697948",
-    "source": "BBC",
+    "venue": "BBC",
     "year": 2018
   },
   
@@ -43,7 +103,7 @@
     "card_title": "Booze Calculator: What's Your Drinking Nationality",
     "how": "",
     "link": "https://www.bbc.com/news/health-30500372",
-    "source": "BBC",
+    "venue": "BBC",
     "year": 2017
   },
   {
@@ -58,7 +118,7 @@
     "card_title": "Can a robot do your job?",
     "how": "",
     "link": "https://ig.ft.com/can-a-robot-do-your-job/",
-    "source": "Financial Times",
+    "venue": "Financial Times",
     "year": 2017
   },
   {
@@ -73,7 +133,7 @@
     "card_title": "Can You Guess Trump’s Record?",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2020/10/05/opinion/trump-record-quiz.html?searchResultPosition=5",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2020
   },
   {
@@ -88,7 +148,7 @@
     "card_title": "Day Zero: How Cape Town is running out of water",
     "how": "",
     "link": "https://www.theguardian.com/cities/ng-interactive/2018/feb/03/day-zero-how-cape-town-running-out-water",
-    "source": "Guardian",
+    "venue": "Guardian",
     "year": 2018
   },
   {
@@ -103,7 +163,7 @@
     "card_title": "Do You Know How Divided White And Black Americans Are On Racism? ",
     "how": "",
     "link": "https://projects.fivethirtyeight.com/racism-polls/",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2020
   },
 
@@ -119,7 +179,7 @@
     "card_title": "Do you think you can tell how a neighborhood voted just by looking around",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2021/upshot/trump-biden-geography-quiz.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2021
   },
   {
@@ -134,7 +194,7 @@
     "card_title": "Educate Your Child",
     "how": "",
     "link": "https://gabriellelamarrlemee.github.io/thesis-simulation/",
-    "source": "Gabriellelamarrlemee",
+    "venue": "Gabriellelamarrlemee",
     "year": 2018
   },
   {
@@ -149,7 +209,7 @@
     "card_title": "Escuelas que cambiaron el color político y otros hallazgos del mapa de resultados en todo el país",
     "how": "",
     "link": "https://www.lanacion.com.ar/politica/nuevo-relevamiento-compara-los-resultados-entre-las-paso-y-las-generales-en-la-escuela-donde-votaste-nid30112021/",
-    "source": "LA NACION",
+    "venue": "LA NACION",
     "year": 2021
   },
   {
@@ -164,7 +224,7 @@
     "card_title": "Every Country Has Its Own Climate Risks. What’s Yours?",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2021/01/28/opinion/climate-change-risks-by-country.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2021
   },
   {
@@ -179,7 +239,7 @@
     "card_title": "Find Out If Your Job Will Be Automated",
     "how": "",
     "link": "https://www.bloomberg.com/graphics/2017-job-risk/",
-    "source": "Bloomberg",
+    "venue": "Bloomberg",
     "year": 2017
   },
 
@@ -195,7 +255,7 @@
     "card_title": "Guess how much prices on 11 common grocery items have risen in one year",
     "how": "",
     "link": "https://qz.com/2088955/us-food-prices-are-rising-take-a-quiz-to-find-out-by-how-much/",
-    "source": "Quartz",
+    "venue": "Quartz",
     "year": 2021
   },
 
@@ -212,7 +272,7 @@
     "card_title": "How Full Are Hospital I.C.U.s Near You?",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2020/us/covid-hospitals-near-you.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2020
   },
   {
@@ -227,7 +287,7 @@
     "card_title": "How many pain pills went to your pharmacy?",
     "how": "",
     "link": "https://www.washingtonpost.com/graphics/2019/investigations/pharmacies-pain-pill-map/",
-    "source": "Washington Post",
+    "venue": "Washington Post",
     "year": 2020
   },
   {
@@ -242,7 +302,7 @@
     "card_title": "How Men & Women See the Workplace Differently",
     "how": "",
     "link": "http://graphics.wsj.com/how-men-and-women-see-the-workplace-differently/",
-    "source": "WSJ",
+    "venue": "WSJ",
     "year": 2016
   },
   {
@@ -257,7 +317,7 @@
     "card_title": "How Much Hotter Is Your Hometown Than When You Were Born",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2018/08/30/climate/how-much-hotter-is-your-hometown.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2018
   },
   {
@@ -272,7 +332,7 @@
     "card_title": "How the racial makeup of where you live has changed since 1990",
     "how": "",
     "link": "https://www.washingtonpost.com/nation/interactive/2021/racial-makeup-census-diversity/?geoid=17031241600",
-    "source": "Washington Post",
+    "venue": "Washington Post",
     "year": 2021
   },
   {
@@ -287,7 +347,7 @@
     "card_title": "How to determine the accuracy of a Covid-19 test",
     "how": "",
     "link": "https://qz.com/1941258/how-to-determine-the-accuracy-of-a-covid-19-test/",
-    "source": "Quartz",
+    "venue": "Quartz",
     "year": 2020
   },
   {
@@ -302,7 +362,7 @@
     "card_title": "How Y’all, Youse And You Guys Talk",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2014/upshot/dialect-quiz-map.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2013
   },
   {
@@ -317,7 +377,7 @@
     "card_title": "How You Will Die",
     "how": "",
     "link": "https://flowingdata.com/2016/01/19/how-you-will-die/",
-    "source": "Flowing Data",
+    "venue": "Flowing Data",
     "year": 2016
   },
   {
@@ -332,7 +392,7 @@
     "card_title": "Hvordan blir klimaet i / How's the climate in?",
     "how": "",
     "link": "https://www.nrk.no/klima/kommune",
-    "source": "NRK",
+    "venue": "NRK",
     "year": 2021
   },
   {
@@ -347,7 +407,7 @@
     "card_title": "I am as tall as ...",
     "how": "",
     "link": "https://multimedia.scmp.com/culture/article/leaders-height/index.html",
-    "source": "SCMP",
+    "venue": "SCMP",
     "year": 2021
   },
   {
@@ -362,7 +422,7 @@
     "card_title": "International Travel During Covid-19: More Restrictions as Cases Rise",
     "how": "",
     "link": "https://www.bloomberg.com/graphics/where-can-travel-coronavirus-update-restrictions-testing-quarantine/?srnd=graphics-v2",
-    "source": "Bloomberg",
+    "venue": "Bloomberg",
     "year": 2021
   },
   {
@@ -377,7 +437,7 @@
     "card_title": "Is It Better To Rent Or Buy",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2014
   },
   {
@@ -392,7 +452,7 @@
     "card_title": "Is Your Home At Risk Of Flooding From Rising Seas By 2050? Check This Map",
     "how": "",
     "link": "https://www.buzzfeednews.com/article/zahrahirji/climate-change-map-homes-flooding",
-    "source": "Buzzfeed",
+    "venue": "Buzzfeed",
     "year": 2018
   },
   {
@@ -407,7 +467,7 @@
     "card_title": "Kan geboortebeperking het wereldwijde voedselprobleem oplossen? ",
     "how": "",
     "link": "https://www.volkskrant.nl/kijkverder/2018/wereldbevolking/?referrer=https%3A%2F%2Ft.co%2FOAoltOfopb",
-    "source": "De Volkskrant",
+    "venue": "De Volkskrant",
     "year": 2019
   },
   {
@@ -422,7 +482,7 @@
     "card_title": "Kan geboortebeperking het wereldwijde voedselprobleem oplossen? ",
     "how": "",
     "link": "https://www.volkskrant.nl/kijkverder/2018/wereldbevolking/?referrer=https%3A%2F%2Ft.co%2FOAoltOfopb",
-    "source": "De Volkskrant",
+    "venue": "De Volkskrant",
     "year": 2019
   },
   {
@@ -437,7 +497,7 @@
     "card_title": "Most Personality Quizzes Are Junk Science. Take One That Isn’t.",
     "how": "",
     "link": "https://projects.fivethirtyeight.com/personality-quiz/#result-charts",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2019
   },
   {
@@ -452,7 +512,7 @@
     "card_title": "NHS Tracker",
     "how": "",
     "link": "https://www.bbc.co.uk/news/health-41483322",
-    "source": "BBC",
+    "venue": "BBC",
     "year": 2019
   },
   {
@@ -467,7 +527,7 @@
     "card_title": "Opinion: How much of your life will you lose by going back to the office? Try our calculator",
     "how": "",
     "link": "https://www.washingtonpost.com/opinions/interactive/2021/commute-calculator-pandemic/",
-    "source": "Washington Post",
+    "venue": "Washington Post",
     "year": 2021
   },
   {
@@ -482,7 +542,7 @@
     "card_title": "People of the Pandemic",
     "how": "",
     "link": "https://peopleofthepandemicgame.com/",
-    "source": "peopleofthepandemic",
+    "venue": "peopleofthepandemic",
     "year": 2020
   },
   {
@@ -497,7 +557,7 @@
     "card_title": "Rough justice: How police are failing survivors of sexual assault",
     "how": "",
     "link": "https://www.abc.net.au/news/2020-01-28/how-police-are-failing-survivors-of-sexual-assault/11871364?nw=0",
-    "source": "ABC",
+    "venue": "ABC",
     "year": 2020
   },
   {
@@ -512,7 +572,7 @@
     "card_title": "See Just How Big DoorDash, Airbnb and Snowflake Have Gotten",
     "how": "",
     "link": "https://www.wsj.com/graphics/can-you-guess-how-many-hotel-chains-equal-the-value-of-airbnb/",
-    "source": "WSJ",
+    "venue": "WSJ",
     "year": 2021
   },
   {
@@ -527,7 +587,7 @@
     "card_title": "Should I Travel This Year?",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2020/07/31/travel/coronavirus-travel-risk.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2020
   },
   {
@@ -542,7 +602,7 @@
     "card_title": "Should Prison Sentences Be Based On Crimes That Haven’t Been Committed Yet",
     "how": "",
     "link": "https://fivethirtyeight.com/features/prison-reform-risk-assessment/",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2015
   },
   {
@@ -557,7 +617,7 @@
     "card_title": "Should Prison Sentences Be Based On Crimes That Haven’t Been Committed Yet",
     "how": "",
     "link": "https://fivethirtyeight.com/features/prison-reform-risk-assessment/",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2015
   },
   {
@@ -572,7 +632,7 @@
     "card_title": "The Nest Egg Game: Your Life in 10 Financial Milestones",
     "how": "",
     "link": "https://www.wsj.com/graphics/nest-egg-game/",
-    "source": "WSJ",
+    "venue": "WSJ",
     "year": 2019
   },
   {
@@ -587,7 +647,7 @@
     "card_title": "The Real Estate Books of the German Occupiers",
     "how": "",
     "link": "https://pointer.kro-ncrv.nl/hier-staan-van-joden-onteigende-panden-bij-jou-in-de-buurt",
-    "source": "KRO-NCRV",
+    "venue": "KRO-NCRV",
     "year": 2020
   },
 
@@ -603,7 +663,7 @@
     "card_title": "To move or not to move? Life in the UK with the BN(O) visa",
     "how": "",
     "link": "https://multimedia.scmp.com/infographics/news/hong-kong/article/3122906/bno/index.html",
-    "source": "SCMP",
+    "venue": "SCMP",
     "year": 2021
   },
   {
@@ -618,7 +678,7 @@
     "card_title": "Use This Neat Tool To See If Your County Can Predict The Election",
     "how": "",
     "link": "https://www.buzzfeednews.com/article/johntemplon/how-well-does-your-county-predict-the-next-president",
-    "source": "Buzzfeed",
+    "venue": "Buzzfeed",
     "year": 2016
   },
   {
@@ -633,7 +693,7 @@
     "card_title": "What Are the Vaccine Roadblocks Where You Live?",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2021/02/25/opinion/covid-vaccination-barriers.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2021
   },
   {
@@ -648,7 +708,7 @@
     "card_title": "What if All COVID-19 Deaths in Brazil Happened in Your Neighborhood?",
     "how": "",
     "link": "https://piaui.folha.uol.com.br/lupa/epicentro/en/",
-    "source": "Folha de S.Paulo",
+    "venue": "Folha de S.Paulo",
     "year": 2020
   },
   {
@@ -663,7 +723,7 @@
     "card_title": "When could everyone in the U.S. get vaccinated?",
     "how": "",
     "link": "https://graphics.reuters.com/HEALTH-CORONAVIRUS/VACCINE-CALCULATOR/rlgvdgewwpo/",
-    "source": "Reuters",
+    "venue": "Reuters",
     "year": 2021
   },
   {
@@ -678,7 +738,7 @@
     "card_title": "When Will Your State Reopen? Here’s The Data Being Used To Decide",
     "how": "",
     "link": "https://www.buzzfeednews.com/article/peteraldhous/when-will-my-state-reopen",
-    "source": "Buzzfeed",
+    "venue": "Buzzfeed",
     "year": 2020
   },
   {
@@ -693,7 +753,7 @@
     "card_title": "Which Winter Olympic Sport Is Best For You?",
     "how": "",
     "link": "https://projects.fivethirtyeight.com/winter-olympics-quiz/",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2018
   },
   {
@@ -708,7 +768,7 @@
     "card_title": "Which Winter Olympic Sport Is Best For You?",
     "how": "",
     "link": "https://projects.fivethirtyeight.com/winter-olympics-quiz/",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2018
   },
   {
@@ -723,7 +783,7 @@
     "card_title": "Who’s Next in Your State’s Vaccine Line?",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2021/03/10/opinion/covid-vaccine-lines-states.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2021
   },
   {
@@ -738,7 +798,7 @@
     "card_title": "Why We're Experiencing So Many Unusually Hot Summer Nights ",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2021/09/13/upshot/up-hot-nights.html ",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2021
   },
   {
@@ -753,7 +813,7 @@
     "card_title": "Without A Vaccine, Herd Immunity Won’t Save Us",
     "how": "",
     "link": "https://fivethirtyeight.com/features/without-a-vaccine-herd-immunity-wont-save-us/",
-    "source": "Fivethirtyeight",
+    "venue": "Fivethirtyeight",
     "year": 2020
   },
   {
@@ -768,7 +828,7 @@
     "card_title": "Yeah, el barrio, drogas y lujo",
     "how": "",
     "link": "https://www.lanacion.com.ar/sociedad/yeah-el-barrio-drogas-y-lujo-asi-suenan-y-de-esto-hablan-los-traperos-en-la-playlist-de-los-nid16092021/#/",
-    "source": "LA NACION",
+    "venue": "LA NACION",
     "year": 2021
   },
   {
@@ -783,7 +843,7 @@
     "card_title": "Years You Have Left to Live, Probably",
     "how": "",
     "link": "https://flowingdata.com/2015/09/23/years-you-have-left-to-live-probably/",
-    "source": "Flowing Data",
+    "venue": "Flowing Data",
     "year": 2015
   },
   {
@@ -798,7 +858,7 @@
     "card_title": "You Draw It: How Family Income Predicts Children’s College Chances",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2015
   },
   {
@@ -813,7 +873,7 @@
     "card_title": "You Draw It: How Family Income Predicts Children’s College Chances",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2015
   },
 
@@ -829,7 +889,7 @@
     "card_title": "You Draw It: What Got Better Or Worse During Obama's Presidency",
     "how": "",
     "link": "https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html",
-    "source": "New York Times",
+    "venue": "New York Times",
     "year": 2017
   },
   {
@@ -844,7 +904,7 @@
     "card_title": "Your Personal Carbon History",
     "how": "",
     "link": "https://parametric.press/issue-02/carbon-history/",
-    "source": "Parametric Press",
+    "venue": "Parametric Press",
     "year": 2020
   }
 ]
