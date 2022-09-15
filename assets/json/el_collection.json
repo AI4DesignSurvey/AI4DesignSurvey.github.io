@@ -1,0 +1,11 @@
+[
+    {"EL_id":0, "EL_tag":"Data"}, 
+    {"EL_id":1, "EL_tag":"Information"}, 
+    {"EL_id":2, "EL_tag":"Knowledge"},  
+    {"EL_id":3, "EL_tag":"Wisdom"}, 
+    {"EL_id":4, "EL_tag":"Establisher"}, 
+    {"EL_id":5, "EL_tag":"Initial"},
+    {"EL_id":6, "EL_tag":"Peak"}, 
+    {"EL_id":7, "EL_tag":"Release"}
+]
+    
