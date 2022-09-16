@@ -922,7 +922,7 @@ footer .footer-text {
   line-height: 1.68rem;
   margin: 0 auto;
   display: flex;
-  justify-content:center;
+  /* justify-content:center; */
   margin-top: 0.375rem;
   /* padding-bottom: 0.5rem; */
 }
@@ -942,7 +942,7 @@ footer .footer-text {
 /*设置卡片高度*/
 .card-inner {
   position: relative;
-  height: 26rem;
+  height: 27rem;
 }
 
 .card-inner .front,
