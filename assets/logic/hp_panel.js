@@ -321,7 +321,7 @@ let VNS_panel = new Homepage_Panel(homepage_vns_url, vns_panel_title, vns_panel_
 
 const homepage_el_url = "./assets/json/el_collection.json";
 const el_panel_title = "Input";
-const el_btn_name_template = "${EL_tag}";
+// const el_btn_name_template = "${EL_tag}";
 const el_panel_name = "filter";
 const EL_panel = new Homepage_Panel(homepage_el_url, el_panel_title, 
     el_btn_name_template, el_panel_name, EL_callback);
