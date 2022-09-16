@@ -1,4 +1,6 @@
-import { VNS_panel, EL_panel} from './hp_panel.js';
+// import { VNS_panel, EL_panel} from './hp_panel.js';
+import { VNS_panel} from './hp_panel.js';
+import { EL_panel} from './hp_panel_2.js';
 import { MNav, Collapse_Btn } from './hp_mobileNav.js';
 import { init_card_display } from './hp_middle.js';
 import { VideoData_Card } from './video_dataset.js';

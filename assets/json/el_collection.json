@@ -1,11 +1,27 @@
 [
-    {"EL_id":0, "EL_tag":"Data"}, 
-    {"EL_id":1, "EL_tag":"Information"}, 
-    {"EL_id":2, "EL_tag":"Knowledge"},  
-    {"EL_id":3, "EL_tag":"Wisdom"}, 
-    {"EL_id":4, "EL_tag":"Establisher"}, 
-    {"EL_id":5, "EL_tag":"Initial"},
-    {"EL_id":6, "EL_tag":"Peak"}, 
-    {"EL_id":7, "EL_tag":"Release"}
+    {"EL_id":0, "EL_type":"title", "EL_tag":"Scope"}, 
+    {"EL_id":1, "EL_type":"select", "EL_tag":"Partial"}, 
+    {"EL_id":2, "EL_type":"select", "EL_tag":"Mid"},  
+    {"EL_id":3, "EL_type":"select", "EL_tag":"Whole"}, 
+
+    {"EL_id":4, "EL_type":"title", "EL_tag":"Access"}, 
+    {"EL_id":5, "EL_type":"select", "EL_tag":"Novices"}, 
+    {"EL_id":6, "EL_type":"select", "EL_tag":"Mid"},  
+    {"EL_id":7, "EL_type":"select", "EL_tag":"Experts"}, 
+
+    {"EL_id":0, "EL_type":"title", "EL_tag":"Agency"}, 
+    {"EL_id":1, "EL_type":"select", "EL_tag":"AI"}, 
+    {"EL_id":2, "EL_type":"select", "EL_tag":"Mid"},  
+    {"EL_id":3, "EL_type":"select", "EL_tag":"Designer"}, 
+
+    {"EL_id":4, "EL_type":"title", "EL_tag":"Flexibility"}, 
+    {"EL_id":5, "EL_type":"select", "EL_tag":"Single-turn"}, 
+    {"EL_id":6, "EL_type":"select", "EL_tag":"Mid"},  
+    {"EL_id":7, "EL_type":"select", "EL_tag":"Multi-turn"}, 
+
+    {"EL_id":0, "EL_type":"title", "EL_tag":"Visibility"}, 
+    {"EL_id":1, "EL_type":"select", "EL_tag":"Implicit"}, 
+    {"EL_id":2, "EL_type":"select", "EL_tag":"Mid"},  
+    {"EL_id":3, "EL_type":"select", "EL_tag":"Explicit"}
 ]
     

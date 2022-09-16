@@ -3,12 +3,11 @@ import { VNS_click_callback, VNS_scroll_callback, EL_callback } from './hp_middl
 
 class Homepage_Panel {
 
-    constructor (btn_json_url, panel_title, panel_title2, btn_name_tag_template, panel_name, click_event_callback = () => {}, 
+    constructor (btn_json_url, panel_title, btn_name_tag_template, panel_name, click_event_callback = () => {}, 
         global_event_listener = () => {}) {
 
         this._btn_json_url = btn_json_url + "";
         this._panel_title = panel_title + "";
-        this._panel_title2 = panel_title2 + "";
         this._btn_name_tag_template = btn_name_tag_template + "";
         this._panel_name  = panel_name + "";
         this._btn_queue = [];  // save btn items
@@ -19,6 +18,7 @@ class Homepage_Panel {
         //     return ;
         // }
     }
+
 
     _createPanel (extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName) {
         let panel_node = document.createElement("div");
@@ -35,49 +35,14 @@ class Homepage_Panel {
         let n = 1;
         // $.ajaxSettings.async = false;
         $.getJSON(this._btn_json_url, json => {
+
             json.forEach((item, i, jsonArr) => {
-                if ( (n-1)%3===0 && n<=12) {
+                if ((n-1)%4===0) {
                     let btn_node = this._createButton(item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
                     this._appendTo_queue(btn_node); // append btn to panel queue
                     panel_group_node.appendChild(btn_node);
-                }
-                else if ( n<=12) {
+                } else {
                     let btn_node = this._createButtonChild(item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
-                    this._appendTo_queue(btn_node); // append btn to panel queue
-                    panel_group_node.appendChild(btn_node);
-                }
-                n+=1;
-
-            });
-            
-            this._bindClickEvents(this._click_event_callback);
-            this._bindOtherListenerEvents(this._global_event_callback);
-        });
-
-        panel_node.innerHTML = panel_title_html;
-        panel_node.appendChild(panel_group_node);
-        return panel_node;
-    }
-
-    _createPanel2 (extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName) {
-        let panel_node = document.createElement("div");
-        // let panel_chart_title_html = `<h3 class="sidebar-panel-title">Chart Types</h3>`;
-
-        let panel_title_html = `<h3 class="sidebar-panel-title">${this._panel_title2}</h3>`;
-
-        let panel_group_node = document.createElement("div");
-
-        panel_node.classList.add("sidebar-panel");
-        panel_node.setAttribute("id", this._panel_name.concat("-panel"));
-        panel_group_node.classList.add("sidebar-panel-group");
-
-        let n = 1;
-        // $.ajaxSettings.async = false;
-        $.getJSON(this._btn_json_url, json => {
-
-            json.forEach((item, i, jsonArr) => {
-                if ( n>12) {
-                    let btn_node = this._createButton(item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
                     this._appendTo_queue(btn_node); // append btn to panel queue
                     panel_group_node.appendChild(btn_node);
                 }
@@ -107,11 +72,12 @@ class Homepage_Panel {
         }
 
         let btn_node = document.createElement("div");
-        let btn_symbol_html = `<span class="${this._panel_name}-btn-symbol"></span>`;
+        let btn_symbol_html = `<span class="${this._panel_name}-btn-symbol}"></span>`;
         let btn_text_html = `<span class="${this._panel_name}-btn-text">
             ${this._get_reg_template(this._btn_name_tag_template, json_item, methodToBtnName)}</span>`;
 
-        btn_node.classList.add("sidebar-btn", this._panel_name.concat("-btn"));
+        // btn_node.classList.add("sidebar-btn", this._panel_name.concat("-btn"));
+        btn_node.classList.add("dimension", this._panel_name.concat("-btn"));
 
         if(extraClass_toA_arr) {
             extraClass_toA_arr.forEach((class_name, i, class_arr) => {
@@ -146,7 +112,7 @@ class Homepage_Panel {
         btn_node.innerHTML = btn_symbol_html + btn_text_html + extraNode_html;
         return btn_node;
     }
-
+    // 创建筛选，每一类别的高中低
     _createButtonChild (json_item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName) {
         json_item = json_item || {};
 
@@ -164,7 +130,7 @@ class Homepage_Panel {
         let btn_text_html = `<span class="${this._panel_name}-btn-text">
             ${this._get_reg_template(this._btn_name_tag_template, json_item, methodToBtnName)}</span>`;
 
-        btn_node.classList.add("sidebar-btn", this._panel_name.concat("-btn"));
+        btn_node.classList.add("sidebar-btn", this._panel_name.concat("-btn"), "couldselect");
 
         if(extraClass_toA_arr) {
             extraClass_toA_arr.forEach((class_name, i, class_arr) => {
@@ -273,64 +239,42 @@ Homepage_Panel.prototype.appendTo = function (parentNode, extraNode_html, extraC
     }
 
     this._panel_node = this._createPanel(extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
-    this._panel_node2 = this._createPanel2(extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
+    // this._panel_node2 = this._createPanel2(extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
 
     parentNode.appendChild(this._panel_node);
-    parentNode.appendChild(this._panel_node2);
+    // parentNode.appendChild(this._panel_node2);
     return true;
 }
 
 // VNS callback
 
 
- /**
-  *  create "Visual Narrative Strategies" panel 
-  * 
-  *  Example:
-  * <a href="#" class="sidebar-btn scrollSpy-btn default">
-        <span class="scrollSpy-btn-symbol"></span>
-        <span class="scrollSpy-btn-text">Comparison (8)</span>
-        <span class="scrollSpy-btn-stop"></span>
-    </a>
-  * */
-const homepage_vns_url = "./assets/json/vns_collection.json";
-const vns_panel_title = "AI Assisting Designers";
-const vns_panel_title2 = "Designers Assisting AI";
-const vns_btn_name_template = "${VNS_clustername} (${VNS_num})";
-const vns_panel_name = "scrollSpy";
-let VNS_panel = new Homepage_Panel(homepage_vns_url, vns_panel_title, vns_panel_title2, vns_btn_name_template, 
-    vns_panel_name, VNS_click_callback, VNS_scroll_callback);
 
-  /**
-  *  create "Editorial Layers" panel 
-  * 
-  *  Example:
-  * <a class="sidebar-btn filter-btn active">
-        <span class="filter-btn-symbol"></span>
-        <span class="filter-btn-text">The elements of Visualization</span>
-    </a>
-  * */
-// const homepage_chart_url = "./assets/json/charts_collection.json";
-// const chart_panel_title = "Chart Types";
-// const el_chart_panel_title = "Chart Types";
-// const el_btn_name_template = "${EL_tag}";
-// const el_panel_name = "filter";
-// const Chart_panel = new Homepage_Panel(homepage_chart_url, chart_panel_title, 
-//     chart_btn_name_template, chart_panel_name, Chart_callback);
+// const homepage_vns_url = "./assets/json/vns_collection.json";
+// const vns_panel_title = "AI Assisting Designers";
+// const vns_panel_title2 = "Designers Assisting AI";
+// const vns_btn_name_template = "${VNS_clustername} (${VNS_num})";
+// const vns_panel_name = "scrollSpy";
+// let VNS_panel = new Homepage_Panel(homepage_vns_url, vns_panel_title, vns_panel_title2, vns_btn_name_template, 
+//     vns_panel_name, VNS_click_callback, VNS_scroll_callback);
+
+
+
+
+
 
 const homepage_el_url = "./assets/json/el_collection.json";
 const el_panel_title = "Characterizing";
-const el_panel_title2 = "";
 const el_btn_name_template = "${EL_tag}";
 const el_panel_name = "filter";
-const EL_panel = new Homepage_Panel(homepage_el_url, el_panel_title, el_panel_title2,  
+const EL_panel = new Homepage_Panel(homepage_el_url, el_panel_title,  
     el_btn_name_template, el_panel_name, EL_callback);
 
 
 
 
 export {
-    VNS_panel as VNS_panel,
+    // VNS_panel as VNS_panel,
     // Chart_panel as Chart_panel,
-    // EL_panel as EL_panel
+    EL_panel as EL_panel
 };
