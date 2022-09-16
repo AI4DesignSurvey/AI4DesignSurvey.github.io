@@ -728,7 +728,7 @@ footer .footer-text {
   background-position: center center;
   width: 100%;
   height: auto;
-  min-height: 11.6rem;
+  min-height: 9.6rem;
   position: relative;
   border-top: 1px solid #DEDEDE;
 }
@@ -942,7 +942,7 @@ footer .footer-text {
 /*设置卡片高度*/
 .card-inner {
   position: relative;
-  height: 28rem;
+  height: 26rem;
 }
 
 .card-inner .front,
