@@ -1400,13 +1400,13 @@ footer .footer-text {
   }
 }
 
-.sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active {
+.sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active, .btn.active {
   border-color: transparent;
   background-color: #DAF4F8;
 }
 
 @media (max-width: 576px) {
-  .sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active {
+  .sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active, .btn.active {
     border: 1px solid #DAF4F8;
   }
 }

@@ -32,23 +32,33 @@ class Homepage_Panel {
         panel_node.setAttribute("id", this._panel_name.concat("-panel"));
         panel_group_node.classList.add("sidebar-panel-group");
 
-        let n = 1;
+        let pre_title = '';
         // $.ajaxSettings.async = false;
         $.getJSON(this._btn_json_url, json => {
-
+            let selectList = [];
             json.forEach((item, i, jsonArr) => {
-                if ((n-1)%4===0) {
-                    let btn_node = this._createButton(item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
-                    this._appendTo_queue(btn_node); // append btn to panel queue
-                    panel_group_node.appendChild(btn_node);
-                } else {
-                    let btn_node = this._createButtonChild(item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
-                    this._appendTo_queue(btn_node); // append btn to panel queue
-                    panel_group_node.appendChild(btn_node);
-                }
-                n+=1;
+                if (json[i]["EL_type"] === "title") {
+                    let btn_node = this._createButtonChild(selectList, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName, pre_title);
+                    if (selectList.length > 0) {
+                        this._appendTo_queue(btn_node); // append btn to panel queue
+                        panel_group_node.appendChild(btn_node);
+                        selectList = [];
+                    }
 
+                    btn_node = this._createButton(item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName);
+                    this._appendTo_queue(btn_node); // append btn to panel queue
+                    panel_group_node.appendChild(btn_node);
+                    pre_title = item["EL_tag"];
+                } else {
+                    selectList.push(item);
+                }
             });
+            let btn_node = this._createButtonChild(selectList, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName, pre_title);
+            if (selectList.length > 0) {
+                this._appendTo_queue(btn_node); // append btn to panel queue
+                panel_group_node.appendChild(btn_node);
+                selectList = [];
+            }
             
             this._bindClickEvents(this._click_event_callback);
             this._bindOtherListenerEvents(this._global_event_callback);
@@ -113,11 +123,10 @@ class Homepage_Panel {
         return btn_node;
     }
     // 创建筛选，每一类别的高中低
-    _createButtonChild (json_item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName) {
-        json_item = json_item || {};
+    _createButtonChild (json_item, extraNode_html, extraClass_toA_arr, extraAttribute_toA, methodToBtnName, title) {
+        json_item = json_item || [];
 
-        if((typeof json_item !== "object") 
-            || (typeof extraNode_html !== "string")
+        if((typeof extraNode_html !== "string")
             || !(extraClass_toA_arr instanceof Array)
             || (typeof extraAttribute_toA !== "object")
         ) {
@@ -127,23 +136,37 @@ class Homepage_Panel {
 
         let btn_node = document.createElement("div");
         let btn_symbol_html = `<span class="${this._panel_name}-btn-line"></span>`;
-        let btn_text_html = `<span class="${this._panel_name}-btn-text">
-            ${this._get_reg_template(this._btn_name_tag_template, json_item, methodToBtnName)}</span>`;
-
-        btn_node.classList.add("sidebar-btn", this._panel_name.concat("-btn"), "couldselect");
-
-        if(extraClass_toA_arr) {
-            extraClass_toA_arr.forEach((class_name, i, class_arr) => {
-                if(typeof class_name != "string") {
-                    return false;
-                }
-
-                if(class_name.search(Homepage_Panel.btn_name_regex) > -1) {
-                    class_name = this._get_reg_template(class_name, json_item, str => str.replace(/\s+/g, "-"));
-                }
-                btn_node.classList.add(class_name);
-            });
+        for (let i = 0; i < json_item.length; i++) {
+            let btn = document.createElement("button");
+            btn.classList.add("btn", this._panel_name.concat("-btn"), "active");
+            btn.style.padding = 0;
+            btn.style.fontSize = "0.8rem";
+            btn.setAttribute("title", title);
+            if (i === 0) {
+                btn.style.borderTopLeftRadius = "10px";
+                btn.style.borderBottomLeftRadius = "10px";
+            } else if (i === json_item.length - 1) {
+                btn.style.borderTopRightRadius = "10px";
+                btn.style.borderBottomRightRadius = "10px";
+            }
+            btn.innerHTML = `${this._get_reg_template(this._btn_name_tag_template, json_item[i], methodToBtnName)}`;
+            btn_node.appendChild(btn);
         }
+
+        btn_node.classList.add(this._panel_name.concat("-btn"), "couldselect", "btn-group");
+        
+        // if(extraClass_toA_arr) {
+        //     extraClass_toA_arr.forEach((class_name, i, class_arr) => {
+        //         if(typeof class_name != "string") {
+        //             return false;
+        //         }
+
+        //         if(class_name.search(Homepage_Panel.btn_name_regex) > -1) {
+        //             class_name = this._get_reg_template(class_name, json_item, str => str.replace(/\s+/g, "-"));
+        //         }
+        //         btn_node.classList.add(class_name);
+        //     });
+        // }
         
         //控制滚动的
         if(Object.keys(extraAttribute_toA).length > 0) {
@@ -162,7 +185,7 @@ class Homepage_Panel {
             }
         }
 
-        btn_node.innerHTML = btn_symbol_html + btn_text_html + extraNode_html;
+        btn_node.innerHTML += btn_symbol_html + extraNode_html;
         return btn_node;
     }
 
@@ -204,14 +227,16 @@ class Homepage_Panel {
     // _bindEvents () {
         // console.log("EL binding...");
         this._btn_queue.forEach((btn, i, btn_queue) => {
-            btn.addEventListener("click", () => {
-                // if(btn.classList.contains("active")) {
-                //     btn.classList.remove("active");
-                // } else {
-                //     btn.classList.add("active");
-                // }
-                callback(btn);
-            });
+            for (let b of btn.childNodes) {
+                b.addEventListener("click", () => {
+                    // if(btn.classList.contains("active")) {
+                    //     btn.classList.remove("active");
+                    // } else {
+                    //     btn.classList.add("active");
+                    // }
+                    callback(b);
+                });
+            }
         });
     }
 

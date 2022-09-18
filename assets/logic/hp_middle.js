@@ -126,7 +126,7 @@ export const EL_callback = function (btn, btn_queue) {
 
     // console.log("this is EL_KW_LIST []: ", EL_KW_LIST);
     
-    let btn_kw_str = btn.querySelector(".filter-btn-text").innerText;
+    let btn_kw_str = btn.getAttribute("title") + "_" + btn.innerText;
     console.log("this is btn_kw_str'': ", btn_kw_str);
 
     if(btn.classList.contains("active")) {
