@@ -164,32 +164,32 @@ class Homepage_Card {
         var AVT_tag = this.parameters["AVT_tag"];
         var VNS_tag = this.parameters["VNS_tag"]; 
 
-        if(AVT_tag==0){
+        if(AVT_tag==0 || AVT_tag==1){
             let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
             card_frontImg_node.classList.add("card-frontImg");
             card_frontImg_node.innerHTML = front_preview_html;
         }
 
-        if(AVT_tag==1){
-            if( VNS_tag == "Observations"){
-                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
-                card_frontImg_node.classList.add("card-frontImg");
-                card_frontImg_node.innerHTML = front_preview_html;
-            }else if( VNS_tag == "C5"){
-                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
-                card_frontImg_node.classList.add("card-frontImg");
-                card_frontImg_node.innerHTML = front_preview_html;
-            }else if( VNS_tag == "C3"){
-                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
-                card_frontImg_node.classList.add("card-frontImg");
-                card_frontImg_node.innerHTML = front_preview_html;
-            }else {
-                let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
-                card_frontImg_node.classList.add("card-frontImg");
-                card_frontImg_node.innerHTML = front_preview_html;
-            }
+        // if(AVT_tag==1){
+        //     if( VNS_tag == "Observations"){
+        //         let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
+        //         card_frontImg_node.classList.add("card-frontImg");
+        //         card_frontImg_node.innerHTML = front_preview_html;
+        //     }else if( VNS_tag == "C5"){
+        //         let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
+        //         card_frontImg_node.classList.add("card-frontImg");
+        //         card_frontImg_node.innerHTML = front_preview_html;
+        //     }else if( VNS_tag == "C3"){
+        //         let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}_1.png">`
+        //         card_frontImg_node.classList.add("card-frontImg");
+        //         card_frontImg_node.innerHTML = front_preview_html;
+        //     }else {
+        //         let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
+        //         card_frontImg_node.classList.add("card-frontImg");
+        //         card_frontImg_node.innerHTML = front_preview_html;
+        //     }
             
-        }
+        // }
         
         return card_frontImg_node;
     }
