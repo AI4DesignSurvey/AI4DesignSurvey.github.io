@@ -143,11 +143,17 @@ class Homepage_Panel {
             btn.style.fontSize = "0.8rem";
             btn.setAttribute("title", title);
             if (i === 0) {
-                btn.style.borderTopLeftRadius = "10px";
-                btn.style.borderBottomLeftRadius = "10px";
+                btn.style.borderTopLeftRadius = "15px";
+                btn.style.borderBottomLeftRadius = "15px";
+                btn.style.borderRightWidth = "3px";
+                btn.style.borderRightStyle = "solid";
+                btn.style.borderRightColor = "#ffffff";
             } else if (i === json_item.length - 1) {
-                btn.style.borderTopRightRadius = "10px";
-                btn.style.borderBottomRightRadius = "10px";
+                btn.style.borderTopRightRadius = "15px";
+                btn.style.borderBottomRightRadius = "15px";
+                btn.style.borderLeftWidth = "2px";
+                btn.style.borderLeftStyle = "solid";
+                btn.style.borderLeftColor = "#ffffff";
             }
             btn.innerHTML = `${this._get_reg_template(this._btn_name_tag_template, json_item[i], methodToBtnName)}`;
             btn_node.appendChild(btn);

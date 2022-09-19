@@ -1373,7 +1373,7 @@ footer .footer-text {
   cursor: pointer;
 }
 .couldselect {
-
+  height: 30px;
 }
 .sidebar-panel-group .sidebar-btn {
   border-color: transparent;
