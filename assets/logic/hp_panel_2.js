@@ -295,7 +295,7 @@ Homepage_Panel.prototype.appendTo = function (parentNode, extraNode_html, extraC
 
 
 const homepage_el_url = "./assets/json/el_collection.json";
-const el_panel_title = "Characterizing";
+const el_panel_title = " Characteristics";
 const el_btn_name_template = "${EL_tag}";
 const el_panel_name = "filter";
 const EL_panel = new Homepage_Panel(homepage_el_url, el_panel_title,  
