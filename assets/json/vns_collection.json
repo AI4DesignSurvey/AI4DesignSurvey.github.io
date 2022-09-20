@@ -4,32 +4,32 @@
         "VNS_tag":"C1",
         "VNS_clustername":"Discovering",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can help designers understand the perspectives of the people they are designing for and unpack the context they are working in.",
+        "VNS_num":3
         },
         {
         "VNS_id":0,
         "VNS_tag":"C2",
         "VNS_clustername":"Interpreting user comments",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"By structuring and highlighting comments recorded from interviews with users, AI can assist designers in discovering users' mindsets, behavior, and lifestyle.",
+        "VNS_num":2
         },
         {
         "VNS_id":0,
         "VNS_tag":"C3",
         "VNS_clustername":"Understanding user behaviors",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can extract underlying patterns from user behaviors observed when they live or work.",
+        "VNS_num":1
         },
         {
         "VNS_id":0,
         "VNS_tag":"C4",
         "VNS_clustername":"Visualizing",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can augment designers' abilities to visualize hard-to-express ideas by collecting and curating various references in response to a given set of user requirements.",
+        "VNS_num":29
         },
         
         {
@@ -37,72 +37,72 @@
         "VNS_tag":"C5",
         "VNS_clustername":"Stimulating divergent thinking",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can be used to encourage divergent thinking by developing numerous ideas and unexpected solutions as many as possible.",
+        "VNS_num":13
         },
         {
         "VNS_id":0,
         "VNS_tag":"C6",
         "VNS_clustername":"Promoting convergent thinking",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"Designers also use AI to promote convergent thinking, delimiting research space and constraining ideas within their known framework.",
+        "VNS_num":16
         },
         {
         "VNS_id":0,
         "VNS_tag":"C7",
         "VNS_clustername":"Creating",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can assist designers in externalizing their ideas and transforming them into presentable forms.",
+        "VNS_num":59
         },
         {
         "VNS_id":0,
         "VNS_tag":"C8",
         "VNS_clustername":"Generating drafts",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can help designers create by initiating a starting point which is usually presented as a form of low-fidelity prototypes that are created by methods such as sketches.",
+        "VNS_num":42
         },
         {
         "VNS_id":0,
         "VNS_tag":"C9",
         "VNS_clustername":"Refining for the best",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can assist designers in refining their designs through a series of iterations through which low-fidelity prototypes are transformed into medium- or high-fidelity prototypes.",
+        "VNS_num":17
         },
         {
         "VNS_id":0,
         "VNS_tag":"C10",
         "VNS_clustername":"Testing",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can enhance designers' ability to test their work by predicting human judgements and preferences to help understand the designs from the perspective of users.",
+        "VNS_num":17
         },
         {
         "VNS_id":0,
         "VNS_tag":"C11",
         "VNS_clustername":"Evaluating quality of experience",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can be used to test the user experience of designs which is more subjective aspects of a design, such as fun and engagement, and suggest users' intrinsic motivation to use the design.",
+        "VNS_num":9
         },
         {
         "VNS_id":0,
         "VNS_tag":"C12",
         "VNS_clustername":"Measuring quality of use",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"AI can also help designers test the use of designs, referring to the degree to which a design can be used to achieve specific goals effectively, efficiently, and satisfactorily.",
+        "VNS_num":8
         },
         {
         "VNS_id":0,
         "VNS_tag":"C13",
         "VNS_clustername":"Training",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"Designers can help train AI to gain design knowledge and perform assigned design tasks.",
+        "VNS_num":6
         },
         
         {
@@ -110,7 +110,7 @@
         "VNS_tag":"C14",
         "VNS_clustername":"Regulating",
         "VNS_color":"#E6E600",
-        "VNS_desc":"Using Golden Hook, a data story is started with the Establisher based on readers' personal data or knowledge. This design pattern can only be found at the beginning of the story and is used to help readers quickly understand the topic of a story. It serves as a hook to reveal unexpected findings and increase curiosity. ",
-        "VNS_num":7
+        "VNS_desc":"Designers can help regulate AI's role and behaviors to fit in with their own design workflows.",
+        "VNS_num":4
         }
 ]
