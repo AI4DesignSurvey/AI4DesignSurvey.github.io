@@ -176,13 +176,15 @@ const create_display = function (display_queue = new DisplayQueue("new display s
         display_member = display_queue._queue[VNS_tag][0];
         if(display_queue._queue[VNS_tag][1] > 0 && VNS_tag !== "head") {
             card_display_single_node = create_single_display(display_member);
-            display_node_list.push(card_display_single_node);
+            display_node_list.concat(card_display_single_node);
             if(document.querySelector(".scrollSpy-btn." + VNS_tag)) {
                 document.querySelector(".scrollSpy-btn." + VNS_tag).classList.remove("disabled");
             }
 
             // append single display node to DOM
-            card_display_node.appendChild(card_display_single_node);
+            for (let node of card_display_single_node) {
+                card_display_node.appendChild(node);
+            }
         } else if(document.querySelector(".scrollSpy-btn." + VNS_tag)) {
             document.querySelector(".scrollSpy-btn." + VNS_tag).classList.add("disabled");
             document.querySelector(".scrollSpy-btn." + VNS_tag).classList.remove("active");
@@ -204,18 +206,18 @@ const create_display = function (display_queue = new DisplayQueue("new display s
 const create_single_display = function (display_member = new DisplayQueueMember()) {
 
     let VNS_tag = display_member.get_VNS_tag();
-    let card_display_single_node = document.createElement("div");
-    let card_deck_node = document.createElement("div");
-    card_display_single_node.classList.add(VNS_tag);
-    card_display_single_node.setAttribute("id", VNS_tag);
-    card_deck_node.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-lg-3", "card-deck");
-    card_display_single_node.appendChild(card_deck_node);
+    if (VNS_tag === "C1" || VNS_tag === "C4" || VNS_tag === "C7" || VNS_tag === "C10" || VNS_tag === "C13" || VNS_tag === "C14") {
+        let reminderNode = display_member.appendTo(vns_method_to_btn_name);
+        return [reminderNode];
+    } else {
+        let card_deck_node = document.createElement("div");
+        card_deck_node.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-lg-3", "card-deck");
 
-    // append card nodes to the deck node
-    create_cards(display_member, card_deck_node);
-
-    display_member.appendTo(card_display_single_node, card_deck_node, vns_method_to_btn_name);
-    return card_display_single_node;
+        // append card nodes to the deck node
+        create_cards(display_member, card_deck_node); 
+        let reminderNode = display_member.appendTo(vns_method_to_btn_name);
+        return [reminderNode, card_deck_node];
+    }
 }
 
 const create_cards = function (display_member = new DisplayQueueMember(), card_deck_node = new HTMLElement()) {
