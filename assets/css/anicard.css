@@ -864,7 +864,7 @@ footer .footer-text {
   font-weight: 400;
   padding: 0.125rem 1rem;
   background-color: #DAF4F8;
-  border: 1px solid #2A6772;
+  /* border: 1px solid #2A6772; */
   border-radius: 50vh;
   margin-left: auto;
   outline: none;
@@ -1479,6 +1479,13 @@ footer .footer-text {
   .sidebar-panel-group .sidebar-btn:hover.filter-btn:not(.active) {
     background-color: transparent;
   }
+}
+
+.filter-btn {
+  background-color: #F3F3F3;
+}
+.dimension {
+  background-color: #FFFFFF;
 }
 
 .sidebar-panel-group .sidebar-btn:active, .sidebar-panel-group .sidebar-btn:focus, .sidebar-panel-group .sidebar-btn.focus, .sidebar-panel-group .sidebar-btn.active, .btn.active {
