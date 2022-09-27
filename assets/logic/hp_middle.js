@@ -7,14 +7,23 @@ const _CARD_DISPLAY_NODES = [];
 const EL_KW_LIST = [];
 const CH_KW_LIST = [];
 
-const EL_Origin_LIST = ["Data"
-    ,"Information"
-    ,"Knowledge"
-    ,"Wisdom"
-    ,"Establisher"
-    ,"Initial"
-    ,"Peak"
-    ,"Release"];
+const EL_Origin_LIST = [
+    "Scope_Partial",
+    "Scope_Mid",
+    "Scope_Whole",
+    "Access_Novices",
+    "Access_Mid",
+    "Access_Experts",
+    "Agency_AI",
+    "Agency_Mid",
+    "Agency_Designer",
+    "Flexibility_Single-turn",
+    "Flexibility_Mid",
+    "Flexibility_Multi-turn",
+    "Visibility_Implicit",
+    "Visibility_Mid",
+    "Visibility_Explicit"
+];
 
 const EL_New_LIST = [];
 
@@ -149,10 +158,6 @@ export const EL_callback = function (btn, btn_queue) {
                 }
             }
         }
-        
-        console.log(EL_Origin_LIST);
-        
-
     } else {
         btn.classList.add("active");
         console.log(`EL button\: \"${btn_kw_str}\" was reactivated.`);
