@@ -858,21 +858,16 @@ footer .footer-text {
 }
 
 
-.card-footer-bottom-chart {
-  color: #000000;
-  font-size: 0.875rem;
+.card-deck .card-footer-bottom {
+  color: #2A6772;
+  font-size: 0.75rem;
   font-weight: 400;
-  padding: 0rem 0.5rem;
-  /*background-color: #FFFFFF;*/
-  /*border: 1px solid #a6a6a610;
-  border-radius: 50vh;*/
+  padding: 0.125rem 1rem;
+  background-color: #DAF4F8;
+  border: 1px solid #2A6772;
+  border-radius: 50vh;
   margin-left: auto;
   outline: none;
-  /*display:block;*/
-  /*display: inline-block;*/
-  /*text-align: top;*/
-  line-height: 21px;
-  /*border-bottom: 20px;*/
 }
 
 .card-deck .card-footer-bottom:active {
@@ -933,6 +928,7 @@ footer .footer-text {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
 }
+
 .header-text-title {
   font-size: 1rem;
   font-weight: 600;
@@ -979,6 +975,62 @@ footer .footer-text {
 /*.card-img-top .preview:hover {
   display: none;
 }*/
+
+.card-appBox {
+  color: #333333;
+  padding: 0 1rem;
+  margin: 0.8rem 0 0 0;
+  text-align: left;
+  overflow-y: auto;
+}
+.card-typebox, .card-codebox {
+  color: #333333;
+  padding: 0 1rem;
+  margin: 0.6rem 0 0 0 !important;
+  text-align: left;
+  overflow-y: auto;
+}
+
+.BackBigTitle {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1rem;
+}
+.back-text-content {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+}
+.codes-title {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 300;
+  color: #909090;
+}
+
+.app-fields-icon {
+  margin-left: 8px;
+  padding-right: 8px;
+  width: 20px !important;
+  display: inline;
+  height: 20px;
+  /* border-radius: 8px; */
+  /* background-color: #1D1D1D; */
+}
+.back-app-icon {
+  width: 12px;
+}
+
+
+.back-codes {
+  display: flex;
+  justify-content: start;
+}
+.codes-right {
+  margin-left: 2rem;
+}
+
+
 
 
 .card-inner .front {

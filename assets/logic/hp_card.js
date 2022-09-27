@@ -22,10 +22,11 @@ class Homepage_Card {
         let card_front_node = document.createElement("div");
         let card_back_node = document.createElement("div");
         let card_front_header_color = this._createCard_header_color();
+        let card_back_header_color = this._createCard_header_color();
         let card_front_header = this._createCard_header();
         let card_back_header = card_front_header.cloneNode(true);
         deck_single_node.classList.add("col-xl-4", "col-lg-6", "col-sm-12", "card-deck-single");
-        card_inner_node.classList.add("card-inner", `el-${this.parameters["EL_tag1"].replace(/\s+/g, "-")}`, `el-${this.parameters["EL_tag2"].replace(/\s+/g, "-")}`);
+        card_inner_node.classList.add("card-inner", `el-${this.parameters["EL_tag1"].replace(/\s+/g, "-")}`, `${this.parameters["VNS_tag"]}`);
         card_front_node.classList.add("card", "front");
         card_back_node.classList.add("card", "back");
 
@@ -44,8 +45,12 @@ class Homepage_Card {
 
         // back
         let back_nodeList = [
-            card_back_header, this._createCard_backImgBox(),
-            this._createCard_backBody(), this._createCard_footer(0)
+            card_back_header_color,
+            card_back_header, 
+            this._createCard_backApplicationBox(),
+            this._createCard_backBody(), 
+            this._createCard_backCode(), 
+            this._createCard_footer(0)
         ];
         back_nodeList.forEach((node, i, nodeList) => card_back_node.appendChild(node));
 
@@ -204,6 +209,37 @@ class Homepage_Card {
     *     </div>
     * </div>
     * */
+
+    _createCard_backApplicationBox () {
+        let card_appBox_node = document.createElement("div");
+        this._app_fields_text = this.parameters["discipline"];
+
+        this._app_fields_icon = this._app_fields_text.replace(/\s+/g, "-");
+        this._app_fields_iconUI = this._app_fields_icon.replace(/[/]/, "-");
+
+        let back_apptitle_html = `<div class="apptitle BackBigTitle">Application Fields</div>`; 
+        let app_fields_node = document.createElement("div");
+        let app_fields_text_html = `<span class="app-fields-text back-text-content">${this._app_fields_text}</span>`;
+        
+        let app_fields_icon_html = 
+            `<span class="app-fields-icon">
+                <img class="back-app-icon" src="./assets/icon/${this._app_fields_iconUI}.svg">
+            </span>`;
+
+        card_appBox_node.classList.add("card-appBox");
+        app_fields_node.classList.add("app_fields");
+        // img_cover_overlay_node.classList.add("img-cover-overlay");
+        // Object.keys(overlay_attr).forEach(
+        //     (key, i, keyArray) => img_cover_overlay_node.setAttribute(key, overlay_attr[key])
+        // );
+
+        app_fields_node.innerHTML = app_fields_text_html + app_fields_icon_html;
+        card_appBox_node.innerHTML = back_apptitle_html;
+        card_appBox_node.appendChild(app_fields_node);
+        return card_appBox_node;
+    }
+
+    // 历史留存，并未调用，仅作参考
     _createCard_backImgBox () {
         let card_imgBox_node = document.createElement("div");
         this._back_gif_name = '';
@@ -301,29 +337,67 @@ class Homepage_Card {
      *  </div>
      */
     _createCard_backBody () {
-        let card_body_node = document.createElement("div");
-        let card_body_subtitle_html = `<h6 class="card-body-subtitle"></h6>`;
-        let card_body_caption_node = document.createElement("div");
-        let caption_item_html = "";
-        let caption_valueArr = [
-            // this.parameters["eg_venue"], this.parameters["eg_year"], 
-            // this.parameters["eg_category"], this.parameters["eg_subcategory"]
-        ];
+        let card_backtype_node = document.createElement("div");
+        this._type_text = this.parameters["type"];
 
-        card_body_node.classList.add("card-body");
-        card_body_caption_node.classList.add("card-body-caption");
+        // this._app_fields_icon = this._app_fields_text.replace(/\s+/g, "-");
+
+
+        let back_typetitle_html = `<div class="apptitle BackBigTitle">Contribution Types</div>`; 
+        let app_fields_node = document.createElement("div");
+        let app_fields_text_html = `<span class="app-fields-text back-text-content">${this._type_text}</span>`;
         
-        Homepage_Card.caption_keyArr.forEach((key, i, keyList) => {
-            if(caption_valueArr[i] === "") {
-                return ;
-            }
 
-            caption_item_html = ``;
-            card_body_caption_node.innerHTML += caption_item_html;
-        });
-        card_body_node.innerHTML = card_body_subtitle_html;
-        card_body_node.appendChild(card_body_caption_node);
-        return card_body_node;
+        card_backtype_node.classList.add("card-typebox");
+        app_fields_node.classList.add("app_fields");
+
+        let back_codetitle_html = `<div class="apptitle BackBigTitle">Codes</div>`; 
+
+        app_fields_node.innerHTML = app_fields_text_html;
+        card_backtype_node.innerHTML = back_typetitle_html;
+        card_backtype_node.appendChild(app_fields_node);
+
+        return card_backtype_node;
+    }
+
+    _createCard_backCode () {
+        let card_backcodes_node = document.createElement("div");
+        this._type_text = this.parameters["type"];
+
+        // this._app_fields_icon = this._app_fields_text.replace(/\s+\//g, "-");
+
+        let back_codetitle_html = `<div class="apptitle BackBigTitle">Codes</div>`; 
+
+        let app_fields_node = document.createElement("div");
+        let app_fields_text_html = `
+        <div class="codes-left">
+            <div class="codes-title">Input Modality</div>
+            <div class="back-text-content">${this.parameters["Input Modality"]}</div>
+            <div class="codes-title">Computational method</div>
+            <div class="back-text-content">${this.parameters["Computational method"]}</div>
+            <div class="codes-title">User Groups</div>
+            <div class="back-text-content">${this.parameters["User Groups"]}</div>
+        </div>
+         <div class="codes-right">
+            <div class="codes-title">Influence</div>
+            <div class="back-text-content">${this.parameters["Influence"]}</div>
+            <div class="codes-title">AI Action</div>
+            <div class="back-text-content">${this.parameters["AI Action"]}</div>
+            <div class="codes-title">Scope</div>
+            <div class="back-text-content">${this.parameters["Scope"]}</div>
+        </div>
+        
+        `;
+        
+
+        card_backcodes_node.classList.add("card-body", "card-codebox");
+        app_fields_node.classList.add("back-codes");
+
+        app_fields_node.innerHTML = app_fields_text_html;
+        card_backcodes_node.innerHTML = back_codetitle_html;
+        card_backcodes_node.appendChild(app_fields_node);
+
+        return card_backcodes_node;
     }
 
 
@@ -339,25 +413,42 @@ class Homepage_Card {
         if(direction > 0) {
             // positive
             left_html = `<span class="card-footer-num">NO. ${this.parameters["card_id"]}</span>`;
-            button_text = " ";
-        } 
-        else {
+            button_text = "View details";
+        } else {
             // negative
-            left_html = ``;
-            button_text = "";
+            // left_html = `<a href="${this.parameters["eg_url"]}" target="_blank"><span class="card-footer-url"></span>URL</a>`;
+            left_html = `<span class="card-footer-num">NO. ${this.parameters["card_id"]}</span>`;
+            button_text = "Back to front";
         }
         
-        card_footer_bottom_html = `<div class="card-footer-bottom-chart">${this.parameters["Chart_tag"]}</div>`;
-        card_footer_bottom_icon_html = `<div class="${this.parameters["Chart_tag"].replace(/\s+/g, "-")}"></div>`;
+        card_footer_bottom_html = `<button class="card-footer-bottom">${button_text}</button>`;
         card_footer_node.classList.add("card-footer");
 
-        card_footer_bottom_node.classList.add("card-footer-child");
-
-        card_footer_node.innerHTML = left_html;
-        card_footer_bottom_node.innerHTML =  card_footer_bottom_icon_html + card_footer_bottom_html;
-        // card_footer_node.appendChild(card_footer_bottom_node);
-
+        card_footer_node.innerHTML = left_html + card_footer_bottom_html;
         return card_footer_node;
+
+        // if(direction > 0) {
+        //     // positive
+        //     left_html = `<span class="card-footer-num">NO. ${this.parameters["card_id"]}</span>`;
+        //     button_text = " ";
+        // } 
+        // else {
+        //     // negative
+        //     left_html = ``;
+        //     button_text = "";
+        // }
+        
+        // card_footer_bottom_html = `<div class="card-footer-bottom-chart">${this.parameters["Chart_tag"]}</div>`;
+        // card_footer_bottom_icon_html = `<div class="${this.parameters["Chart_tag"].replace(/\s+/g, "-")}"></div>`;
+        // card_footer_node.classList.add("card-footer");
+
+        // card_footer_bottom_node.classList.add("card-footer-child");
+
+        // card_footer_node.innerHTML = left_html;
+        // card_footer_bottom_node.innerHTML =  card_footer_bottom_icon_html + card_footer_bottom_html;
+        // // card_footer_node.appendChild(card_footer_bottom_node);
+
+        // return card_footer_node;
     }
 }
 
@@ -375,62 +466,62 @@ Homepage_Card.prototype._bindEvents = function () {
     const back_trans_button = card_inner_node.querySelector(".back .card-footer-bottom");
     const front_img = card_inner_node.querySelector(".front .card-frontImg");
     // const front_preview_img = this_card_node.querySelector("img.front-preview");
-    const back_img_box = this_card_node.querySelector(".card-imgBox");
-    const back_img_cover = back_img_box.querySelector(".img-cover");
-    const back_gif_zooming = back_img_cover.querySelector(".img-cover-overlay");
+    // const back_img_box = this_card_node.querySelector(".card-imgBox");
+    // const back_img_cover = back_img_box.querySelector(".img-cover");
+    // const back_gif_zooming = back_img_cover.querySelector(".img-cover-overlay");
     const modal_title_node = document.querySelector(".modal-title");
 
     // card footer button
-    // front_trans_button.addEventListener("click", () => {
-    //     if(!card_inner_node.classList.contains("turned-over")) {
-    //         card_inner_node.classList.add("turned-over");
-    //     }
-    // });
-    // back_trans_button.addEventListener("click", () => {
-    //     if(card_inner_node.classList.contains("turned-over")) {
-    //         card_inner_node.classList.remove("turned-over");
-    //     }
-    // });
+    front_trans_button.addEventListener("click", () => {
+        if(!card_inner_node.classList.contains("turned-over")) {
+            card_inner_node.classList.add("turned-over");
+        }
+    });
+    back_trans_button.addEventListener("click", () => {
+        if(card_inner_node.classList.contains("turned-over")) {
+            card_inner_node.classList.remove("turned-over");
+        }
+    });
 
     // card footer URL
     $(card_inner_node.querySelector(".card-footer a")).tooltip({ title: "watch full video" });
 
     //鼠标hover的时候，动图gif出现并播放
     // front gif static preview
-    front_img.addEventListener("mouseover", () => {
-        front_img.querySelector("img.front-gif").style.visibility = "none";
-        $(front_img).find("img.front-preview").fadeTo("fast", 0);
-    });
-    front_img.addEventListener("mouseout", () => {
-        front_img.querySelector("img.front-gif").style.visibility = "block";
-        $(front_img).find("img.front-preview").fadeTo("fast", 1);
-    });
+    // front_img.addEventListener("mouseover", () => {
+    //     front_img.querySelector("img.front-gif").style.visibility = "none";
+    //     $(front_img).find("img.front-preview").fadeTo("fast", 0);
+    // });
+    // front_img.addEventListener("mouseout", () => {
+    //     front_img.querySelector("img.front-gif").style.visibility = "block";
+    //     $(front_img).find("img.front-preview").fadeTo("fast", 1);
+    // });
 
     // back gif zooming in modal window
-    $(back_img_box).hover(
-        function () {
-            $(back_img_cover).fadeTo("fast", 1);
-        },
-        function () {
-            $(back_img_cover).fadeTo("fast", 0);
-        }
-    );
+    // $(back_img_box).hover(
+    //     function () {
+    //         $(back_img_cover).fadeTo("fast", 1);
+    //     },
+    //     function () {
+    //         $(back_img_cover).fadeTo("fast", 0);
+    //     }
+    // );
 
-    // modal window
-    $(back_gif_zooming).tooltip({ title: "zoom in" });
-    back_gif_zooming.addEventListener("click", () => {
-        $('#zooming-modal').modal({
-            backdrop: true,
-            keyboard: false,
-            focus: true,
-            show: true
-        });
+    // // modal window
+    // $(back_gif_zooming).tooltip({ title: "zoom in" });
+    // back_gif_zooming.addEventListener("click", () => {
+    //     $('#zooming-modal').modal({
+    //         backdrop: true,
+    //         keyboard: false,
+    //         focus: true,
+    //         show: true
+    //     });
 
-        document.querySelector(".modal-body > img").setAttribute("src", `./assets/back_gif_s/${this._back_gif_name}`);
-        document.querySelector(".modal-content").classList.add(this.parameters["VNS_tag"]);
-        modal_title_node.innerText = this.parameters["eg_title"];
-        modal_title_node.setAttribute("href", this.parameters["eg_url"]);
-    });
+    //     document.querySelector(".modal-body > img").setAttribute("src", `./assets/back_gif_s/${this._back_gif_name}`);
+    //     document.querySelector(".modal-content").classList.add(this.parameters["VNS_tag"]);
+    //     modal_title_node.innerText = this.parameters["eg_title"];
+    //     modal_title_node.setAttribute("href", this.parameters["eg_url"]);
+    // });
     // $('#zooming-modal').on('show.bs.modal', function() {
     //     let img = new Image();
     //     img.src = `./assets/back_gif_s/${that._back_gif_name}`;

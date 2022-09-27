@@ -83,7 +83,14 @@
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Mid",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "No Input",
+    "Computional method": "No Computation",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "No Output",
+    "AI Outcome": "No Output",
+    "AI Action": "Learn"
 },
 {
     "AVT_tag": "0",
@@ -107,7 +114,14 @@
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Implicit"
+    "Visibility": "Implicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Colorize"
 },
 {
     "AVT_tag": "0",
@@ -131,7 +145,14 @@
     "Access": "Usable by experts",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -155,7 +176,14 @@
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "1",
@@ -175,11 +203,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Mid",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Classification",
+    "AI Outcome": "Classification",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "1",
@@ -199,11 +234,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Mid",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Classification",
+    "AI Outcome": "Classification",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -215,7 +257,7 @@
     "Subability": "Measuring quality of use",
     "venue": "CHI",
     "year": "2022",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -227,7 +269,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "Performance",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "1",
@@ -239,7 +288,7 @@
     "Subability": "Stimulating divergent thinking + Promoting convergent thinking",
     "venue": "DIS",
     "year": "2021",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -251,7 +300,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Integrated framework",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -263,7 +319,7 @@
     "Subability": "Stimulating divergent thinking + Promoting convergent thinking",
     "venue": "DIS",
     "year": "2021",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -275,7 +331,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Integrated framework",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -295,11 +358,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -323,7 +393,14 @@
     "Access": "Usable by novices",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -347,7 +424,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "User Need",
+    "AI Outcome": "Classification",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "1",
@@ -367,11 +451,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -391,11 +482,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -419,7 +517,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Mid",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "No Input",
+    "Computional method": "No Computation",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "No Output",
+    "AI Outcome": "No Output",
+    "AI Action": "Learn"
 },
 {
     "AVT_tag": "0",
@@ -443,7 +548,14 @@
     "Access": "Mid",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Gestural",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -463,11 +575,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Mid",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -491,7 +610,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "1",
@@ -503,7 +629,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "IUI",
     "year": "2021",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -515,7 +641,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "1",
@@ -527,7 +660,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "IUI",
     "year": "2021",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -539,7 +672,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -559,11 +699,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -587,7 +734,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "User Need",
+    "AI Outcome": "Classification",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -611,7 +765,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -635,7 +796,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Mid",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "No Input",
+    "Computional method": "No Computation",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "No Output",
+    "AI Outcome": "No Output",
+    "AI Action": "Learn"
 },
 {
     "AVT_tag": "1",
@@ -659,7 +827,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "1",
@@ -683,7 +858,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -695,7 +877,7 @@
     "Subability": "Promoting convergent thinking",
     "venue": "CHI",
     "year": "2021",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -703,11 +885,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "Analogy",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -731,7 +920,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "Design Component",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -743,7 +939,7 @@
     "Subability": "Stimulating divergent thinking + Regularting",
     "venue": "IUI",
     "year": "2020",
-    "type": "Application + Evaluation",
+    "type": "Application, Evaluation",
     "discipline": "General",
     "Chart_tag": "",
     "EL_tag": "",
@@ -755,7 +951,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "Analogy",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -767,7 +970,7 @@
     "Subability": "Stimulating divergent thinking + Regularting",
     "venue": "IUI",
     "year": "2020",
-    "type": "Application + Evaluation",
+    "type": "Application, Evaluation",
     "discipline": "General",
     "Chart_tag": "",
     "EL_tag": "",
@@ -779,7 +982,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "Analogy",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -791,7 +1001,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "CHI",
     "year": "2020",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -803,7 +1013,14 @@
     "Access": "Usable by novices",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "User Need",
+    "AI Outcome": "Analogy",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -815,7 +1032,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "CHI",
     "year": "2020",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -827,7 +1044,14 @@
     "Access": "Usable by novices",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "User Need",
+    "AI Outcome": "Analogy",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -847,11 +1071,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Single-turn",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Classification",
+    "AI Outcome": "Classification",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "1",
@@ -871,11 +1102,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Single-turn",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Classification",
+    "AI Outcome": "Classification",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "1",
@@ -887,7 +1125,7 @@
     "Subability": "Stimulating divergent thinking + Generating Drafts",
     "venue": "CHI",
     "year": "2020",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -895,11 +1133,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -911,7 +1156,7 @@
     "Subability": "Stimulating divergent thinking + Generating Drafts",
     "venue": "CHI",
     "year": "2020",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -919,11 +1164,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -947,7 +1199,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -971,7 +1230,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -995,7 +1261,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -1019,7 +1292,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -1043,7 +1323,14 @@
     "Access": "Mid",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Integrated framework",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1063,11 +1350,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1079,7 +1373,7 @@
     "Subability": "Generating Drafts",
     "venue": "ICMR",
     "year": "2020",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1091,7 +1385,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Reinforcement Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -1103,7 +1404,7 @@
     "Subability": "Generating Drafts",
     "venue": "OZCHI",
     "year": "2020",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1111,11 +1412,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Classification",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -1139,7 +1447,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -1163,7 +1478,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "Visual",
+    "Computional method": "Integrated framework",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1175,7 +1497,7 @@
     "Subability": "Measuring quality of use",
     "venue": "UIST",
     "year": "2020",
-    "type": "Algorithm + Application + Dataset",
+    "type": "Algorithm, Application, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1187,7 +1509,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -1207,11 +1536,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1223,7 +1559,7 @@
     "Subability": "Generating Drafts",
     "venue": "MM",
     "year": "2020",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1231,11 +1567,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1247,7 +1590,7 @@
     "Subability": "Generating Drafts",
     "venue": "UIST",
     "year": "2020",
-    "type": "Algorithm + Application + Dataset",
+    "type": "Algorithm, Application, Dataset",
     "discipline": "industrial design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1259,7 +1602,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -1271,7 +1621,7 @@
     "Subability": "Generating Drafts",
     "venue": "TOG",
     "year": "2020",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "industrial design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1283,7 +1633,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "1",
@@ -1307,7 +1664,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Implicit"
+    "Visibility": "Implicit",
+    "Input Modality": "Visual",
+    "Computional method": "Integrated framework",
+    "User Groups": "Novice",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -1331,7 +1695,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Implicit"
+    "Visibility": "Implicit",
+    "Input Modality": "Visual",
+    "Computional method": "Integrated framework",
+    "User Groups": "Novice",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1343,7 +1714,7 @@
     "Subability": "Measuring quality of use",
     "venue": "MobileHCI",
     "year": "2020",
-    "type": "Theory + Dataset",
+    "type": "Theory, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1355,7 +1726,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -1367,7 +1745,7 @@
     "Subability": "Promoting convergent thinking",
     "venue": "TOSEM",
     "year": "2020",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1379,7 +1757,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -1403,7 +1788,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Colorize"
 },
 {
     "AVT_tag": "0",
@@ -1427,7 +1819,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1451,7 +1850,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -1471,11 +1877,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Integrated framework",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -1499,7 +1912,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -1523,7 +1943,14 @@
     "Access": "Usable by experts",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -1547,7 +1974,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -1571,7 +2005,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -1583,7 +2024,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "PACMHCI",
     "year": "2019",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1595,7 +2036,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "1",
@@ -1607,7 +2055,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "PACMHCI",
     "year": "2019",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1619,7 +2067,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -1631,7 +2086,7 @@
     "Subability": "Measuring quality of use",
     "venue": "CHI",
     "year": "2019",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1643,7 +2098,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -1667,7 +2129,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Codependent",
+    "System Outcome": "Stimulant",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -1691,7 +2160,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "1",
@@ -1715,7 +2191,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -1727,7 +2210,7 @@
     "Subability": "Promoting convergent thinking",
     "venue": "CHI",
     "year": "2019",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1739,7 +2222,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Analogy",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -1763,7 +2253,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -1787,7 +2284,14 @@
     "Access": "Mid",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "No Input",
+    "Computional method": "No Computation",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "No Output",
+    "AI Outcome": "",
+    "AI Action": "No Action"
 },
 {
     "AVT_tag": "1",
@@ -1811,7 +2315,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "1",
@@ -1835,7 +2346,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "1",
@@ -1847,7 +2365,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "TOG",
     "year": "2018",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1859,7 +2377,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "1",
@@ -1871,7 +2396,7 @@
     "Subability": "Generating Drafts + Refining for the best",
     "venue": "TOG",
     "year": "2018",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1883,7 +2408,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -1895,7 +2427,7 @@
     "Subability": "Training",
     "venue": "UIST",
     "year": "2018",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1903,11 +2435,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Classification",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -1919,7 +2458,7 @@
     "Subability": "Evaluating quality of experience",
     "venue": "TOG",
     "year": "2018",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -1927,11 +2466,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -1951,11 +2497,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Classification",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -1979,7 +2532,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2003,7 +2563,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2027,7 +2594,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Guided",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -2051,7 +2625,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "Novice",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "No Action"
 },
 {
     "AVT_tag": "0",
@@ -2075,7 +2656,14 @@
     "Access": "Usable by experts",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -2099,7 +2687,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2111,7 +2706,7 @@
     "Subability": "Measuring quality of use",
     "venue": "UIST",
     "year": "2017",
-    "type": "Algorithm + Dataset",
+    "type": "Algorithm, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -2119,11 +2714,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "Performance",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -2147,7 +2749,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2171,7 +2780,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2195,7 +2811,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Mid",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "No Input",
+    "Computional method": "No Computation",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "No Output",
+    "AI Outcome": "",
+    "AI Action": "Learn"
 },
 {
     "AVT_tag": "0",
@@ -2219,7 +2842,14 @@
     "Access": "Usable by experts",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2243,7 +2873,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2267,7 +2904,14 @@
     "Access": "Usable by novices",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "Deliverable",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -2291,7 +2935,14 @@
     "Access": "Usable by experts",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "User Need",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -2311,11 +2962,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -2339,7 +2997,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2351,7 +3016,7 @@
     "Subability": "Refining for the best",
     "venue": "MOBILESoft",
     "year": "2016",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -2363,7 +3028,14 @@
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2383,11 +3055,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "Expert",
+    "Influence": "Guided",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -2399,7 +3078,7 @@
     "Subability": "Generating Drafts",
     "venue": "Expresive",
     "year": "2016",
-    "type": "Algorithm + Application",
+    "type": "Algorithm, Application",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -2411,7 +3090,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2423,7 +3109,7 @@
     "Subability": "Promoting convergent thinking",
     "venue": "MM",
     "year": "2015",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "Graphic Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -2431,11 +3117,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -2455,11 +3148,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "1",
@@ -2479,11 +3179,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "Expert",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Retrieve"
 },
 {
     "AVT_tag": "0",
@@ -2503,11 +3210,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Deep Learning",
+    "User Groups": "Novice",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -2531,7 +3245,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2551,11 +3272,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Deep Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -2579,7 +3307,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Novice",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2603,7 +3338,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Colorize"
 },
 {
     "AVT_tag": "0",
@@ -2615,7 +3357,7 @@
     "Subability": "Training",
     "venue": "CHI",
     "year": "2013",
-    "type": "Application + Dataset",
+    "type": "Application, Dataset",
     "discipline": "UI/UX Design",
     "Chart_tag": "",
     "EL_tag": "",
@@ -2627,7 +3369,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Mid",
-    "Visibility": "Mid"
+    "Visibility": "Mid",
+    "Input Modality": "Visual",
+    "Computional method": "No Computation",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Learn"
 },
 {
     "AVT_tag": "0",
@@ -2651,7 +3400,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2671,11 +3427,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Linguistic",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -2699,7 +3462,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -2723,7 +3493,14 @@
     "Access": "Mid",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -2747,7 +3524,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Independent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Model"
 },
 {
     "AVT_tag": "0",
@@ -2771,7 +3555,14 @@
     "Access": "Usable by experts",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Codependent",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Layout"
 },
 {
     "AVT_tag": "0",
@@ -2791,11 +3582,18 @@
     "EL_tag2": "",
     "VNS_ambiguity": "",
     "how": "",
-    "Scope": "Mid",
+    "Scope": "Middle",
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Colorize"
 },
 {
     "AVT_tag": "0",
@@ -2819,7 +3617,14 @@
     "Access": "Usable by novices",
     "Agency": "Mid",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "Expert",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Recognize"
 },
 {
     "AVT_tag": "0",
@@ -2843,7 +3648,14 @@
     "Access": "Usable by experts",
     "Agency": "Designer",
     "Flexibility": "Multi-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Rule-Based Systems",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 },
 {
     "AVT_tag": "0",
@@ -2867,7 +3679,14 @@
     "Access": "Usable by novices",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Visual",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Guided",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Evaluate"
 },
 {
     "AVT_tag": "0",
@@ -2891,6 +3710,13 @@
     "Access": "Usable by experts",
     "Agency": "AI",
     "Flexibility": "Single-turn",
-    "Visibility": "Explicit"
+    "Visibility": "Explicit",
+    "Input Modality": "Touch",
+    "Computional method": "Classical Machine Learning",
+    "User Groups": "No Specific User Group",
+    "Influence": "Interpreted",
+    "System Outcome": "",
+    "AI Outcome": "",
+    "AI Action": "Sketch"
 }
 ]
