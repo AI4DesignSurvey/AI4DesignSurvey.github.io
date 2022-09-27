@@ -142,8 +142,9 @@ class DisplayQueue {
             console.error(`We don't have VNS_tag: ${VNS_tag} here in the queue.`);
             return false;
         }
-        this._queue[VNS_tag][0]._pushCard(card_subject);
-        this._queue[VNS_tag][1]++;
+        if (this._queue[VNS_tag][0]._pushCard(card_subject)) {
+            this._queue[VNS_tag][1]++;
+        }
     }
 
     delCard (VNS_tag, card_id) {
@@ -234,7 +235,7 @@ class DisplayQueueMember extends Homepage_Reminder {
     }
 
     _pushCard (card_subject) {
-        let card_id = card_subject._get_param("card_id");
+        let card_id = Number(card_subject._get_param("card_id"));
         if(card_subject._get_param("VNS_tag") !== this._VNS_tag || (this._get_card_id_list()).indexOf(card_id) > -1) {
             return false;
         }
@@ -293,14 +294,15 @@ class CardsFilter {
 
     filtering_method (obj = {}) {
         let trans_kw = this._regex_keywords(this._keywords);
-        if(this._spec_tag.length > 0) {
-            return obj[this._spec_tag].search(trans_kw) + 1; // number
-        }
-        
+        // if(this._spec_tag.length > 0) {
+        //     console.log(obj)
+        //     return obj[this._spec_tag].search(trans_kw) + 1; // number
+        // }
+
         if(Object.keys(obj).length > 0) {
             return Object.keys(obj).some((key, i, keyArray) => {
                 if((typeof obj[key] === "string") || (typeof obj[key] === "number")) {
-                    return (obj[key] + "").search(trans_kw) >= 0;
+                    return (key + "_" + obj[key] + "").search(trans_kw) >= 0;
                 }
                 return false;
             }) ? 1: 0;
@@ -415,11 +417,11 @@ const init_display_container = function (keywords = [], search = false, EL_filte
         return VISIBLE_DISPLAY_QUEUE;
     }
 
-    if(search == true) {
+    if (search == true) {
         return VISIBLE_DISPLAY_QUEUE.card_filter(FILTER_KEYWORD_QUEUE, keywords, true);
     }
 
-    if(EL_filter == true) {
+    if (EL_filter == true) {
         return VISIBLE_DISPLAY_QUEUE.card_filter(FILTER_TAG_QUEUE, keywords);
     }
 

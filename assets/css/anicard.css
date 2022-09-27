@@ -1035,16 +1035,28 @@ footer .footer-text {
   opacity: 0;
 }
 
+.display-reminder-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 1px;
+  z-index: 500;
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.28, 0.11, 0.32, 1);
+}
+
 .display-reminder {
   width: 100%;
   padding: 0;
   margin: 0;
   position: sticky;
-  top: -1px;
+  top: 76px;
   z-index: 500;
   opacity: 1;
   transition: opacity 0.2s cubic-bezier(0.28, 0.11, 0.32, 1);
 }
+
 .display-reminder-story {
   width: 100%;
   padding: 0;

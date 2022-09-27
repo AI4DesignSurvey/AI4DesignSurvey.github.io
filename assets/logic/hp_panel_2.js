@@ -137,10 +137,11 @@ class Homepage_Panel {
         let btn_node = document.createElement("div");
         let btn_symbol_html = `<span class="${this._panel_name}-btn-line"></span>`;
         for (let i = 0; i < json_item.length; i++) {
-            let btn = document.createElement("button");
+            let btn = document.createElement("div");
             btn.classList.add("btn", this._panel_name.concat("-btn"), "active");
             btn.style.padding = 0;
             btn.style.fontSize = "0.8rem";
+            btn.style.lineHeight = "30px";
             btn.setAttribute("title", title);
             if (i === 0) {
                 btn.style.borderTopLeftRadius = "15px";

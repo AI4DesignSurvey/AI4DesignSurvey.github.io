@@ -478,7 +478,13 @@ class Homepage_Reminder {
             <span class='reminder-sum-s'>SUM: ${this._VNS_num}</span>`;
         
 
-        reminder_node.classList.add("display-reminder");
+        reminder_node.classList.add(this._VNS_tag);
+        reminder_node.setAttribute("id", this._VNS_tag);
+        if (this._VNS_tag === "C1" || this._VNS_tag === "C4" || this._VNS_tag === "C7" || this._VNS_tag === "C10" || this._VNS_tag === "C13" || this._VNS_tag === "C14") {
+            reminder_node.classList.add("display-reminder-section");
+        } else {
+            reminder_node.classList.add("display-reminder");
+        }
         reminder_bg_node.classList.add("reminder-bg");
         reminder_content_node.classList.add("reminder-content");
         // reminder_node.classList.add("display-reminder", "active-sticky");
@@ -505,16 +511,15 @@ Homepage_Reminder.prototype._bindEvents = function () {
     const event_callback = function () {
         if(that._reminder_node) {
             const reminder_node = that._reminder_node;
-            // console.log(reminder_node);
             
             if(reminder_node.nextElementSibling) {
                 const card_deck_node = reminder_node.nextElementSibling;
 
                 let distance_to_top = card_deck_node.getBoundingClientRect().top - reminder_node.getBoundingClientRect().bottom;
                 // console.log(distance_to_top);
-                if(distance_to_top < -3 && !reminder_node.classList.contains("active-sticky")) {
+                if(distance_to_top < 3 && !reminder_node.classList.contains("active-sticky")) {
                     reminder_node.classList.add("active-sticky");
-                } else if(distance_to_top >= -3 && reminder_node.classList.contains("active-sticky")) {
+                } else if(distance_to_top >= 3 && reminder_node.classList.contains("active-sticky")) {
                     reminder_node.classList.remove("active-sticky");
                 }
     
@@ -538,17 +543,17 @@ Homepage_Reminder.prototype._bindEvents = function () {
     CARD_DISPLAY_NODE.parentElement.addEventListener("scroll", event_callback);
 }
 
-Homepage_Reminder.prototype.appendTo = function (parentNode, nextNode, methodToReminderTitle) {
-    if(!(parentNode instanceof HTMLElement) || !(nextNode instanceof HTMLElement)) {
-        console.error(`Either ${parentNode} or ${nextNode} is not a DOM element!`);
-        return false;
-    }
+Homepage_Reminder.prototype.appendTo = function (methodToReminderTitle) {
+    // if(!(parentNode instanceof HTMLElement) || !(nextNode instanceof HTMLElement)) {
+    //     console.error(`Either ${parentNode} or ${nextNode} is not a DOM element!`);
+    //     return false;
+    // }
 
     this._reminder_node = this._createReminder(methodToReminderTitle);
     this._bindEvents();
 
-    parentNode.insertBefore(this._reminder_node, nextNode);
-    return true;
+    // parentNode.insertBefore(this._reminder_node, nextNode);
+    return this._reminder_node;
 }
 
 
