@@ -1129,7 +1129,7 @@ footer .footer-text {
 }
 
 .display-reminder.hidden-sticky {
-  opacity: 0 !important;
+  opacity: 0;
 }
 
 .reminder-content {
