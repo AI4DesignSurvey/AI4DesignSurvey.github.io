@@ -392,7 +392,7 @@ class Homepage_Card {
             <div class="codes-title">Input Modality</div>
             <div class="back-text-content">${this.parameters["Input Modality"]}</div>
             <div class="codes-title">Computational method</div>
-            <div class="back-text-content">${this.parameters["Computational method"]}</div>
+            <div class="back-text-content">${this.parameters["Computational Method"]}</div>
             <div class="codes-title">User Groups</div>
             <div class="back-text-content">${this.parameters["User Groups"]}</div>
         </div>
