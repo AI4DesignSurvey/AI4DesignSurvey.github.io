@@ -3,6 +3,23 @@
 import { vns_method_to_btn_name } from './anicard.js';
 
 // homepage card class
+
+const VNS_tag_color = {
+    "C1": "#E3F4EF",
+    "C2": "#E3F4EF",
+    "C3": "#E3F4EF",
+    "C4": "#FEEAE3",
+    "C5": "#FEEAE3",
+    "C6": "#FEEAE3",
+    "C7": "#EBEEF6",
+    "C8": "#EBEEF6",
+    "C9": "#EBEEF6",
+    "C10": "#FBEAF4",
+    "C11": "#FBEAF4",
+    "C12": "#FBEAF4",
+    "C13": "#EFF8E0",
+    "C14": "#FAF4EC"
+}
 class Homepage_Card {
     constructor(parameters = { 
         card_id, card_title, VNS_tag, VNS_clustername, VNS_ambiguity, EL_tag, EL_tag2, AVT_tag, how, why, 
@@ -222,7 +239,8 @@ class Homepage_Card {
         let app_fields_text_html = `<span class="app-fields-text back-text-content">${this._app_fields_text}</span>`;
         
         let app_fields_icon_html = 
-            `<span class="app-fields-icon">
+            `<svg style="position:absolute;z-index:-1;"><circle cx="18" cy="13" r="12" fill="${VNS_tag_color[this.parameters["VNS_tag"]]}"/></svg>
+            <span class="app-fields-icon">
                 <img class="back-app-icon" src="./assets/icon/${this._app_fields_iconUI}.svg">
             </span>`;
 

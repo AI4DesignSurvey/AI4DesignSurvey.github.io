@@ -33,11 +33,11 @@ function EMPTY_ARRAY(arr = []) {
 }
 
 export const init_card_display = function (card_display_node = new HTMLElement(), search_text = "") {
-    if(EL_KW_LIST.length > 0) {
+    if (EL_KW_LIST.length > 0) {
         EMPTY_ARRAY(_CARD_DISPLAY_NODES);
         EMPTY_ARRAY(EL_KW_LIST);
     }
-    if(CH_KW_LIST.length > 0) {
+    if (CH_KW_LIST.length > 0) {
         EMPTY_ARRAY(_CARD_DISPLAY_NODES);
         EMPTY_ARRAY(CH_KW_LIST);
     }
@@ -57,40 +57,40 @@ export const VNS_click_callback = function (btn, target = "href") {
     //     btn.classList.add("focus");
     // }
 
-    if(document.querySelector(AIM_DISPLAY_ID)) {
+    if (document.querySelector(AIM_DISPLAY_ID)) {
         page_position = document.querySelector(AIM_DISPLAY_ID).offsetTop;
         // $(CARD_DISPLAY_NODE).animate({scrollTop: page_position}, "normal");
-        $(CARD_DISPLAY_NODE.parentElement).animate({scrollTop: page_position}, "normal");
+        $(CARD_DISPLAY_NODE.parentElement).animate({ scrollTop: page_position - 80 }, "normal");
     }
 }
 
 export const VNS_scroll_callback = function (panel_node) {
     const CARD_DISPLAY_NODE = document.querySelector("#card-display-ex");
-    
+
     // CARD_DISPLAY_NODE.onscroll = () => {
     CARD_DISPLAY_NODE.parentElement.onscroll = () => {
 
         const panel_node = document.querySelector(".sidebar-panel-group");
         // let scrollBar_top = CARD_DISPLAY_NODE.scrollTop + 5 + CARD_DISPLAY_NODE.offsetHeight * 0.5;
-        let scrollBar_top = CARD_DISPLAY_NODE.parentElement.scrollTop + 7 + CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5;
-        
+        let scrollBar_top = CARD_DISPLAY_NODE.parentElement.scrollTop - 210 + CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5;
+
         panel_node.querySelectorAll(".sidebar-btn:not(.disabled)").forEach((btn_node, i, btnList) => {
-            // console.log(btn_node)
             let display_id = btn_node.getAttribute("href");
             // console.log(display_id)
             let display_node = document.querySelector(display_id);
-            let display_top = display_node.offsetTop;
-            let display_bottom = display_node.offsetTop + display_node.offsetHeight;
+            let content_node = display_node.nextElementSibling;
+            let display_top = $(display_node).offset().top;
+            let display_bottom = $(content_node).offset().top + $(content_node).height();
 
-            if((scrollBar_top >= display_top) && (scrollBar_top < display_bottom)) {
-                if(!btn_node.classList.contains("active")) {
+            if ((display_id !== "#C1" && display_id !== "#C4" && display_id !== "#C7" && display_id !== "#C10") && (display_top < 150) && (display_bottom > 205)) {
+                if (!btn_node.classList.contains("active")) {
                     btn_node.classList.add("active");
                 }
                 // console.log(`ADD ACTIVE: scroll bar top: ${scrollBar_top}, display top: ${display_top}, display bottom: ${display_bottom}`);
                 return false;
             }
-            
-            if(btn_node.classList.contains("active")) {
+
+            if (btn_node.classList.contains("active")) {
                 btn_node.classList.remove("active");
                 // console.log(`REMOVE ACTIVE: scroll bar top: ${scrollBar_top}, display top: ${display_top}, display bottom: ${display_bottom}`);
             }
@@ -105,7 +105,7 @@ export const VNS_scroll_callback = function (panel_node) {
 //     const CARD_DISPLAY_NODE = document.querySelector("#card-display-ex");
 
 //     // console.log("this is EL_KW_LIST []: ", EL_KW_LIST);
-    
+
 //     let btn_kw_str = btn.querySelector(".chart-btn-text").innerText;
 //     console.log("this is btn_kw_str'': ", btn_kw_str);
 
@@ -134,26 +134,26 @@ export const EL_callback = function (btn, btn_queue) {
     const CARD_DISPLAY_NODE = document.querySelector("#card-display-ex");
 
     // console.log("this is EL_KW_LIST []: ", EL_KW_LIST);
-    
+
     let btn_kw_str = btn.getAttribute("title") + "_" + btn.innerText;
     console.log("this is btn_kw_str'': ", btn_kw_str);
 
-    if(btn.classList.contains("active")) {
-        if(EL_KW_LIST.indexOf(btn_kw_str) >= 0) {
+    if (btn.classList.contains("active")) {
+        if (EL_KW_LIST.indexOf(btn_kw_str) >= 0) {
             console.log(`**** ${btn_kw_str} cannot been added to array. ****`);
-            return ;
+            return;
         }
 
         btn.classList.remove("active");
         console.log(`EL button\: \"${btn_kw_str}\" was filtered out.`);
-        
+
         EL_KW_LIST.push(btn_kw_str);
         // console.log(EL_KW_LIST);
         // console.log(EL_Origin_LIST);
 
-        for (let i=0; i<EL_Origin_LIST.length; i++){
-            for (let n=0; n<EL_KW_LIST.length; n++){
-                if (EL_Origin_LIST[i] == EL_KW_LIST[n]){
+        for (let i = 0; i < EL_Origin_LIST.length; i++) {
+            for (let n = 0; n < EL_KW_LIST.length; n++) {
+                if (EL_Origin_LIST[i] == EL_KW_LIST[n]) {
                     EL_Origin_LIST.splice(i, 1);
                 }
             }
@@ -165,7 +165,7 @@ export const EL_callback = function (btn, btn_queue) {
     }
     create_display(homeAPI(EL_KW_LIST, false, true), _CARD_DISPLAY_NODES, CARD_DISPLAY_NODE);
     // $(CARD_DISPLAY_NODE).animate({scrollTop: 1}, 1);
-    $(CARD_DISPLAY_NODE.parentElement).animate({scrollTop: 1}, 480);
+    $(CARD_DISPLAY_NODE.parentElement).animate({ scrollTop: 1 }, 480);
 }
 
 
@@ -179,10 +179,10 @@ const create_display = function (display_queue = new DisplayQueue("new display s
     let card_display_single_node;
     while (VNS_tag !== "") {
         display_member = display_queue._queue[VNS_tag][0];
-        if(display_queue._queue[VNS_tag][1] > 0 && VNS_tag !== "head") {
+        if (display_queue._queue[VNS_tag][1] > 0 && VNS_tag !== "head") {
             card_display_single_node = create_single_display(display_member);
             display_node_list.concat(card_display_single_node);
-            if(document.querySelector(".scrollSpy-btn." + VNS_tag)) {
+            if (document.querySelector(".scrollSpy-btn." + VNS_tag)) {
                 document.querySelector(".scrollSpy-btn." + VNS_tag).classList.remove("disabled");
             }
 
@@ -190,7 +190,7 @@ const create_display = function (display_queue = new DisplayQueue("new display s
             for (let node of card_display_single_node) {
                 card_display_node.appendChild(node);
             }
-        } else if(document.querySelector(".scrollSpy-btn." + VNS_tag)) {
+        } else if (document.querySelector(".scrollSpy-btn." + VNS_tag)) {
             document.querySelector(".scrollSpy-btn." + VNS_tag).classList.add("disabled");
             document.querySelector(".scrollSpy-btn." + VNS_tag).classList.remove("active");
         }
@@ -199,7 +199,7 @@ const create_display = function (display_queue = new DisplayQueue("new display s
     }
 
     // if search failed or all cards filtered out
-    if(display_node_list.length === 0) {
+    if (display_node_list.length === 0) {
         let page_message_node = document.querySelector(".search-fail").cloneNode(true);
         page_message_node.style.visibility = "block";
         card_display_node.appendChild(page_message_node);
@@ -211,7 +211,7 @@ const create_display = function (display_queue = new DisplayQueue("new display s
 const create_single_display = function (display_member = new DisplayQueueMember()) {
 
     let VNS_tag = display_member.get_VNS_tag();
-    if (VNS_tag === "C1" || VNS_tag === "C4" || VNS_tag === "C7" || VNS_tag === "C10" || VNS_tag === "C13" || VNS_tag === "C14") {
+    if (VNS_tag === "C1" || VNS_tag === "C4" || VNS_tag === "C7" || VNS_tag === "C10") {
         let reminderNode = display_member.appendTo(vns_method_to_btn_name);
         return [reminderNode];
     } else {
@@ -219,7 +219,7 @@ const create_single_display = function (display_member = new DisplayQueueMember(
         card_deck_node.classList.add("row", "row-cols-1", "row-cols-sm-2", "row-cols-lg-3", "card-deck");
 
         // append card nodes to the deck node
-        create_cards(display_member, card_deck_node); 
+        create_cards(display_member, card_deck_node);
         let reminderNode = display_member.appendTo(vns_method_to_btn_name);
         return [reminderNode, card_deck_node];
     }
@@ -234,14 +234,14 @@ const create_cards = function (display_member = new DisplayQueueMember(), card_d
 
 export const MN_callback = function () {
     const CARD_DISPLAY_NODE = document.querySelector("#card-display-ex");
-    
+
     // CARD_DISPLAY_NODE.onscroll = () => {
     const container_node = document.querySelector(".mobile-nav-scrollSpy");
     CARD_DISPLAY_NODE.parentElement.addEventListener("scroll", () => {
 
         // let scrollBar_top = CARD_DISPLAY_NODE.scrollTop + 5 + CARD_DISPLAY_NODE.offsetHeight * 0.5;
         let scrollBar_top = CARD_DISPLAY_NODE.parentElement.scrollTop + 5 + CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.5;
-        
+
         container_node.querySelectorAll(".mobile-nav-item").forEach((item_node, i, itemList) => {
             // console.log(btn_node)
             let display_id = item_node.getAttribute("data-target");
@@ -249,16 +249,16 @@ export const MN_callback = function () {
             let display_top = display_node.offsetTop;
             let display_bottom = display_node.offsetTop + display_node.offsetHeight;
 
-            if((scrollBar_top > display_top) && (scrollBar_top < display_bottom)) {
-                if(!item_node.classList.contains("active")) {
+            if ((scrollBar_top > display_top) && (scrollBar_top < display_bottom)) {
+                if (!item_node.classList.contains("active")) {
                     item_node.classList.add("active");
                     centralize_item(item_node, container_node);
                 }
                 // console.log(`ADD ACTIVE: scroll bar top: ${scrollBar_top}, display top: ${display_top}, display bottom: ${display_bottom}`);
                 return false;
             }
-            
-            if(item_node.classList.contains("active")) {
+
+            if (item_node.classList.contains("active")) {
                 item_node.classList.remove("active");
                 // console.log(`REMOVE ACTIVE: scroll bar top: ${scrollBar_top}, display top: ${display_top}, display bottom: ${display_bottom}`);
             }
@@ -280,5 +280,5 @@ const centralize_item = function (item_node, container_node) {
     let bias = item_node.offsetWidth * 0.5 - container_length * 0.5;
 
     // container_node.scrollTo(item_x + bias, 0);
-    $(container_node).animate({'scrollLeft': parseInt(item_x + bias)}, 150);
+    $(container_node).animate({ 'scrollLeft': parseInt(item_x + bias) }, 150);
 }
