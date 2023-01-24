@@ -650,18 +650,18 @@ footer .footer-text {
 
 /* 卡片颜色渐变 */
 /* C5+C14 */
-.card-deck-single[name="card_24"] .card-header {
+.card-deck-single[name="card_25"] .card-header {
   background: transparent linear-gradient(90deg, #FEEAE3 0%, #FEEAE3 25%, #FAF4EC 75%, #FAF4EC 100%) 0% 0% no-repeat padding-box !important;
 }
-.card-deck-single[name="card_24"] .header-color {
+.card-deck-single[name="card_25"] .header-color {
   background: transparent linear-gradient(90deg, #FB8D62 0%, #FB8D62 25%, #E4C394 75%, #E4C394 100%) 0% 0% no-repeat padding-box !important;
 }
 
 /* C5+C8 */
-.card-deck-single[name="card_27"] .card-header {
+.card-deck-single[name="card_28"] .card-header {
   background: transparent linear-gradient(90deg, #FEEAE3 0%, #FEEAE3 25%, #EBEEF6 75%, #EBEEF6 100%) 0% 0% no-repeat padding-box !important;
 }
-.card-deck-single[name="card_27"] .header-color {
+.card-deck-single[name="card_28"] .header-color {
   background: transparent linear-gradient(90deg, #FB8D62 0%, #FB8D62 25%, #8E9FCB 75%, #8E9FCB 100%) 0% 0% no-repeat padding-box !important;
 }
 
