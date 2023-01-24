@@ -391,21 +391,22 @@ class Homepage_Card {
         <div class="codes-left">
             <div class="codes-title">Input Modality</div>
             <div class="back-text-content">${this.parameters["Input Modality"]}</div>
-            <div class="codes-title">Computational Method</div>
-            <div class="back-text-content">${this.parameters["Computational method"]}</div>
+            <div class="codes-title">Computional Method</div>
+            <div class="back-text-content">${this.parameters["Computional method"]}</div>
             <div class="codes-title">User Groups</div>
             <div class="back-text-content">${this.parameters["User Groups"]}</div>
         </div>
-         <div class="codes-right">
-            <div class="codes-title">Influence</div>
-            <div class="back-text-content">${this.parameters["Influence"]}</div>
-            <div class="codes-title">AI Action</div>
-            <div class="back-text-content">${this.parameters["AI Action"]}</div>
-            <div class="codes-title">Scope</div>
-            <div class="back-text-content">${this.parameters["Scope"]}</div>
-        </div>
         
         `;
+        //卡片背面右侧部分备份
+//         <div class="codes-right">
+//             <div class="codes-title">Influence</div>
+//             <div class="back-text-content">${this.parameters["Influence"]}</div>
+//             <div class="codes-title">AI Action</div>
+//             <div class="back-text-content">${this.parameters["AI Action"]}</div>
+//             <div class="codes-title">Scope</div>
+//             <div class="back-text-content">${this.parameters["Scope"]}</div>
+//         </div>
         
 
         card_backcodes_node.classList.add("card-body", "card-codebox");
