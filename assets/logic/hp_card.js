@@ -21,19 +21,19 @@ const VNS_tag_color = {
     "C14": "#FAF4EC"
 }
 class Homepage_Card {
-    constructor(parameters = { 
-        card_id, card_title, VNS_tag, VNS_clustername, VNS_ambiguity, EL_tag, EL_tag2, AVT_tag, how, why, 
+    constructor(parameters = {
+        card_id, card_title, VNS_tag, VNS_clustername, VNS_ambiguity, EL_tag, EL_tag2, AVT_tag, how, why,
         eg_title, eg_venue, eg_url, eg_year, eg_category, eg_subcategory
     }) {
         this.parameters = {};
         this.parameters = parameters;
     }
-    _createNone () {
+    _createNone() {
         let Ability_node = document.createElement("div");
         return Ability_node;
     }
     //大的创建卡片的方法，里面调用了几个小方法：创建卡片头、身子、尾部等
-    _createCard () {
+    _createCard() {
         let deck_single_node = document.createElement("div");
         let card_inner_node = document.createElement("div");
         let card_front_node = document.createElement("div");
@@ -49,11 +49,11 @@ class Homepage_Card {
 
         deck_single_node.setAttribute("name", "card_" + this.parameters["card_id"]);
 
-        
+
         // front
         let front_nodeList = [
             card_front_header_color,
-            card_front_header, 
+            card_front_header,
             this._createCard_frontBody(),
             this._createCard_frontImg(),
             this._createCard_footer(1)
@@ -63,15 +63,15 @@ class Homepage_Card {
         // back
         let back_nodeList = [
             card_back_header_color,
-            card_back_header, 
+            card_back_header,
             this._createCard_backApplicationBox(),
-            this._createCard_backBody(), 
-            this._createCard_backCode(), 
+            this._createCard_backBody(),
+            this._createCard_backCode(),
             this._createCard_footer(0)
         ];
         back_nodeList.forEach((node, i, nodeList) => card_back_node.appendChild(node));
 
-        
+
         // insert to card-inner
         [card_front_node, card_back_node].forEach(
             (node, i, nodeList) => card_inner_node.appendChild(node)
@@ -84,8 +84,8 @@ class Homepage_Card {
 
 
 
-    _get_aim_deck () {
-        if(this.parameters["VNS_tag"]) {
+    _get_aim_deck() {
+        if (this.parameters["VNS_tag"]) {
             return this.parameters["VNS_tag"];
         }
         return "";
@@ -93,7 +93,7 @@ class Homepage_Card {
 
     _get_param(param_key) {
         param_key = param_key + "" || "card_id";
-        if(Object.keys(this.parameters).indexOf(param_key) < 0) {
+        if (Object.keys(this.parameters).indexOf(param_key) < 0) {
             return -1;
         }
         return this.parameters[param_key];
@@ -108,12 +108,12 @@ class Homepage_Card {
     *     <span class="header-symbol"></span>
     * </div> 
     * */
-    _createCard_header_color () {
+    _createCard_header_color() {
         let card_header_color_node = document.createElement("div");
         card_header_color_node.innerHTML = `<div class="header-color"></div>`;
         return card_header_color_node;
     }
-    _createCard_header () {
+    _createCard_header() {
         let card_header_node = document.createElement("div");
         let header_year_node = document.createElement("div");
         let header_text_node = document.createElement("div");
@@ -169,7 +169,7 @@ class Homepage_Card {
     //     //     card_frontBody_textHtml = `<p class="card-body-text">${card_body_front_textArray[i]}</p>`;
     //     //     card_body_node.innerHTML  += (card_frontBody_titleHtml + card_frontBody_textHtml); 
     //     // });
-        
+
     //     return card_body_node;
     // }
     /**
@@ -179,14 +179,14 @@ class Homepage_Card {
     *     <img class="card-img front-preview" src="./assets/image/loading.svg">
     * </div> 
     * */
-    _createCard_frontImg () {
+    _createCard_frontImg() {
         let card_frontImg_node = document.createElement("div");
         var num = this.parameters["card_id"];
         // console.log (this.parameters["card_id"]);
         var AVT_tag = this.parameters["AVT_tag"];
-        var VNS_tag = this.parameters["VNS_tag"]; 
+        var VNS_tag = this.parameters["VNS_tag"];
 
-        if(AVT_tag==0 || AVT_tag==1){
+        if (AVT_tag == 0 || AVT_tag == 1) {
             let front_preview_html = `<img class="card-img front-preview" src="./assets/hp_front_preview/front_${num}.png">`  // 缺少正面预览png
             card_frontImg_node.classList.add("card-frontImg");
             card_frontImg_node.innerHTML = front_preview_html;
@@ -210,9 +210,9 @@ class Homepage_Card {
         //         card_frontImg_node.classList.add("card-frontImg");
         //         card_frontImg_node.innerHTML = front_preview_html;
         //     }
-            
+
         // }
-        
+
         return card_frontImg_node;
     }
 
@@ -227,18 +227,18 @@ class Homepage_Card {
     * </div>
     * */
 
-    _createCard_backApplicationBox () {
+    _createCard_backApplicationBox() {
         let card_appBox_node = document.createElement("div");
         this._app_fields_text = this.parameters["discipline"];
 
         this._app_fields_icon = this._app_fields_text.replace(/\s+/g, "-");
         this._app_fields_iconUI = this._app_fields_icon.replace(/[/]/, "-");
 
-        let back_apptitle_html = `<div class="apptitle BackBigTitle">Application Fields</div>`; 
+        let back_apptitle_html = `<div class="apptitle BackBigTitle">Application Fields</div>`;
         let app_fields_node = document.createElement("div");
         let app_fields_text_html = `<span class="app-fields-text back-text-content">${this._app_fields_text}</span>`;
-        
-        let app_fields_icon_html = 
+
+        let app_fields_icon_html =
             `<svg style="position:absolute;z-index:-1;"><circle cx="18" cy="13" r="12" fill="${VNS_tag_color[this.parameters["VNS_tag"]]}"/></svg>
             <span class="app-fields-icon">
                 <img class="back-app-icon" src="./assets/icon/${this._app_fields_iconUI}.svg">
@@ -258,7 +258,7 @@ class Homepage_Card {
     }
 
     // 历史留存，并未调用，仅作参考
-    _createCard_backImgBox () {
+    _createCard_backImgBox() {
         let card_imgBox_node = document.createElement("div");
         this._back_gif_name = '';
         // let back_gif_html = `<img class="card-img back-gif" src=${file_exist("./assets/back_gif_s/", [`back_${this.parameters["card_id"]}.gif`, `back_${this.parameters["card_id"]}_${this.parameters["VNS_tag"]}.gif`])} alt="./assets/image/fail_loading.svg">`;  // 缺少反面gif
@@ -302,8 +302,8 @@ class Homepage_Card {
     </div>
     */
 
-   //卡片的浅色部分
-    _createCard_frontBody () {
+    //卡片的浅色部分
+    _createCard_frontBody() {
         let card_body_node = document.createElement("div");
         let card_frontBody_titleHtml = "";
         let card_frontBody_textHtml = "";
@@ -312,13 +312,13 @@ class Homepage_Card {
             this.parameters["venue"],
             this.parameters["link"]
         ];
-        
+
 
         card_body_node.classList.add("card-body");
 
         Homepage_Card.card_body_front_titleArray.forEach((title, i, titleList) => {
-            if(card_body_front_textArray[i] === "") {
-                return ;
+            if (card_body_front_textArray[i] === "") {
+                return;
             }
 
             // if(i==0){
@@ -326,19 +326,19 @@ class Homepage_Card {
             //     card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
             //     return;
             // }
-            if(i==1){
+            if (i == 1) {
                 card_frontBody_textHtml = `<p class="card-body-text"><b>Venue: </b>${card_body_front_textArray[i]}</p>`;
-                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+                card_body_node.innerHTML += (card_frontBody_titleHtml + card_frontBody_textHtml);
                 return;
             }
-            if(i==2){
+            if (i == 2) {
                 card_frontBody_textHtml = `<p class="card-body-text"><b>Link: </b><a classname="caselink" href=${card_body_front_textArray[i]}  target="_blank">URL 🔗</a></p>`;
-                card_body_node.innerHTML+= (card_frontBody_titleHtml + card_frontBody_textHtml); 
+                card_body_node.innerHTML += (card_frontBody_titleHtml + card_frontBody_textHtml);
                 return;
             }
 
         });
-        
+
         return card_body_node;
     }
 
@@ -354,22 +354,22 @@ class Homepage_Card {
      *      </div>
      *  </div>
      */
-    _createCard_backBody () {
+    _createCard_backBody() {
         let card_backtype_node = document.createElement("div");
         this._type_text = this.parameters["type"];
 
         // this._app_fields_icon = this._app_fields_text.replace(/\s+/g, "-");
 
 
-        let back_typetitle_html = `<div class="apptitle BackBigTitle">Contribution Types</div>`; 
+        let back_typetitle_html = `<div class="apptitle BackBigTitle">Contribution Types</div>`;
         let app_fields_node = document.createElement("div");
         let app_fields_text_html = `<span class="app-fields-text back-text-content">${this._type_text}</span>`;
-        
+
 
         card_backtype_node.classList.add("card-typebox");
         app_fields_node.classList.add("app_fields");
 
-        let back_codetitle_html = `<div class="apptitle BackBigTitle">Codes</div>`; 
+        let back_codetitle_html = `<div class="apptitle BackBigTitle">Codes</div>`;
 
         app_fields_node.innerHTML = app_fields_text_html;
         card_backtype_node.innerHTML = back_typetitle_html;
@@ -378,13 +378,13 @@ class Homepage_Card {
         return card_backtype_node;
     }
 
-    _createCard_backCode () {
+    _createCard_backCode() {
         let card_backcodes_node = document.createElement("div");
         this._type_text = this.parameters["type"];
 
         // this._app_fields_icon = this._app_fields_text.replace(/\s+\//g, "-");
 
-        let back_codetitle_html = `<div class="apptitle BackBigTitle">Codes</div>`; 
+        let back_codetitle_html = `<div class="apptitle BackBigTitle">Codes</div>`;
 
         let app_fields_node = document.createElement("div");
         let app_fields_text_html = `
@@ -399,15 +399,15 @@ class Homepage_Card {
         
         `;
         //卡片背面右侧部分备份
-//         <div class="codes-right">
-//             <div class="codes-title">Influence</div>
-//             <div class="back-text-content">${this.parameters["Influence"]}</div>
-//             <div class="codes-title">AI Action</div>
-//             <div class="back-text-content">${this.parameters["AI Action"]}</div>
-//             <div class="codes-title">Scope</div>
-//             <div class="back-text-content">${this.parameters["Scope"]}</div>
-//         </div>
-        
+        //         <div class="codes-right">
+        //             <div class="codes-title">Influence</div>
+        //             <div class="back-text-content">${this.parameters["Influence"]}</div>
+        //             <div class="codes-title">AI Action</div>
+        //             <div class="back-text-content">${this.parameters["AI Action"]}</div>
+        //             <div class="codes-title">Scope</div>
+        //             <div class="back-text-content">${this.parameters["Scope"]}</div>
+        //         </div>
+
 
         card_backcodes_node.classList.add("card-body", "card-codebox");
         app_fields_node.classList.add("back-codes");
@@ -420,7 +420,7 @@ class Homepage_Card {
     }
 
 
-    _createCard_footer (direction = 1) {
+    _createCard_footer(direction = 1) {
 
         let left_html = "";
         let button_text = "";
@@ -429,7 +429,7 @@ class Homepage_Card {
         let card_footer_node = document.createElement("div");
         let card_footer_bottom_node = document.createElement("span");
 
-        if(direction > 0) {
+        if (direction > 0) {
             // positive
             left_html = `<span class="card-footer-num">NO. ${this.parameters["card_id"]}</span>`;
             button_text = "View details";
@@ -439,7 +439,7 @@ class Homepage_Card {
             left_html = `<span class="card-footer-num">NO. ${this.parameters["card_id"]}</span>`;
             button_text = "Back to front";
         }
-        
+
         card_footer_bottom_html = `<button class="card-footer-bottom">${button_text}</button>`;
         card_footer_node.classList.add("card-footer");
 
@@ -456,7 +456,7 @@ class Homepage_Card {
         //     left_html = ``;
         //     button_text = "";
         // }
-        
+
         // card_footer_bottom_html = `<div class="card-footer-bottom-chart">${this.parameters["Chart_tag"]}</div>`;
         // card_footer_bottom_icon_html = `<div class="${this.parameters["Chart_tag"].replace(/\s+/g, "-")}"></div>`;
         // card_footer_node.classList.add("card-footer");
@@ -473,7 +473,7 @@ class Homepage_Card {
 
 
 //这里把card的json传进来了
-Homepage_Card.card_body_front_titleArray = ["HOW","year","link"];
+Homepage_Card.card_body_front_titleArray = ["HOW", "year", "link"];
 Homepage_Card.caption_keyArr = ["venue", "Year", "Category", "Subcategory"];
 
 Homepage_Card.prototype._bindEvents = function () {
@@ -492,12 +492,12 @@ Homepage_Card.prototype._bindEvents = function () {
 
     // card footer button
     front_trans_button.addEventListener("click", () => {
-        if(!card_inner_node.classList.contains("turned-over")) {
+        if (!card_inner_node.classList.contains("turned-over")) {
             card_inner_node.classList.add("turned-over");
         }
     });
     back_trans_button.addEventListener("click", () => {
-        if(card_inner_node.classList.contains("turned-over")) {
+        if (card_inner_node.classList.contains("turned-over")) {
             card_inner_node.classList.remove("turned-over");
         }
     });
@@ -552,14 +552,14 @@ Homepage_Card.prototype._bindEvents = function () {
 
 // 把每张小卡片渲染出来
 Homepage_Card.prototype.appendTo = function (parentNode) {
-    if(!(parentNode instanceof HTMLElement)) {
+    if (!(parentNode instanceof HTMLElement)) {
         console.error(`${parentNode} is not a DOM node!`);
         return false;
     }
 
     this._deck_single_node = this._createCard();
     this._bindEvents();
-    
+
     parentNode.appendChild(this._deck_single_node);
     return true;
 }
@@ -568,15 +568,15 @@ Homepage_Card.prototype.appendTo = function (parentNode) {
 
 // homepage reminder class
 class Homepage_Reminder {
-    constructor({VNS_tag, VNS_desc, VNS_num, VNS_clustername}) {
+    constructor({ VNS_tag, VNS_desc, VNS_num, VNS_clustername }) {
         this._VNS_tag = VNS_tag + "";
         this._VNS_num = VNS_num + "";
         this._VNS_desc = VNS_desc + "";
         this._VNS_clustername = VNS_clustername + "";
     }
-    
+
     //在这里创建主页中C1等大标题
-    _createReminder (methodToReminderTitle = str => str) {
+    _createReminder(methodToReminderTitle = str => str) {
         let reminder_node = document.createElement("div");
         let reminder_bg_node = document.createElement("div");
         let reminder_content_node = document.createElement("div");
@@ -586,7 +586,7 @@ class Homepage_Reminder {
         let reminder_title_html = `<span class="reminder-title">${methodToReminderTitle(this._VNS_clustername)}&nbsp;</span>
             <span class='reminder-sum'>(${this._VNS_num})</span>
             <span class='reminder-sum-s'>SUM: ${this._VNS_num}</span>`;
-        
+
 
         reminder_node.classList.add(this._VNS_tag);
         reminder_node.setAttribute("id", this._VNS_tag);
@@ -616,36 +616,36 @@ Homepage_Reminder.prototype._bindEvents = function () {
     // scroll
     const CARD_DISPLAY_NODE = document.querySelector("#card-display-ex");
     // const reminder_bg_node = reminder_node.querySelector(".reminder-bg");
-    
-    
+
+
     const event_callback = function () {
-        if(that._reminder_node) {
+        if (that._reminder_node) {
             const reminder_node = that._reminder_node;
-            
-            if(reminder_node.nextElementSibling) {
+
+            if (reminder_node.nextElementSibling) {
                 const card_deck_node = reminder_node.nextElementSibling;
 
                 let distance_to_top = card_deck_node.getBoundingClientRect().top - reminder_node.getBoundingClientRect().bottom;
                 // console.log(distance_to_top);
-                if(distance_to_top < 3 && !reminder_node.classList.contains("active-sticky")) {
+                if (distance_to_top < 3 && !reminder_node.classList.contains("active-sticky")) {
                     reminder_node.classList.add("active-sticky");
-                } else if(distance_to_top >= 3 && reminder_node.classList.contains("active-sticky")) {
+                } else if (distance_to_top >= 3 && reminder_node.classList.contains("active-sticky")) {
                     reminder_node.classList.remove("active-sticky");
                 }
-    
-            // if(reminder_node.nextElementSibling && reminder_node.querySelector(".reminder-title").innerHTML == "Emphasis (15)" ) {
+
+                // if(reminder_node.nextElementSibling && reminder_node.querySelector(".reminder-title").innerHTML == "Emphasis (15)" ) {
                 let distance_to_bottom = card_deck_node.getBoundingClientRect().bottom - reminder_node.getBoundingClientRect().top;
                 // if ((distance_to_bottom < CARD_DISPLAY_NODE.offsetHeight * 0.5) && !reminder_node.classList.contains("hidden-sticky")) {
                 if ((distance_to_bottom < CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.1) && !reminder_node.classList.contains("hidden-sticky")) {
                     reminder_node.classList.add("hidden-sticky");
                     // console.log(distance_to_bottom)
-                // } else if ((distance_to_bottom >= CARD_DISPLAY_NODE.offsetHeight * 0.5) && reminder_node.classList.contains("hidden-sticky")) {
+                    // } else if ((distance_to_bottom >= CARD_DISPLAY_NODE.offsetHeight * 0.5) && reminder_node.classList.contains("hidden-sticky")) {
                 } else if ((distance_to_bottom >= CARD_DISPLAY_NODE.parentElement.offsetHeight * 0.1) && reminder_node.classList.contains("hidden-sticky")) {
                     reminder_node.classList.remove("hidden-sticky");
                 }
             }
         }
-        
+
     }
 
     event_callback();
